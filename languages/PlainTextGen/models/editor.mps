@@ -27,14 +27,19 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1233823429331" name="jetbrains.mps.lang.editor.structure.HorizontalGapStyleClassItem" flags="ln" index="15ARfc" />
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
       </concept>
@@ -138,19 +143,15 @@
     <property role="3GE5qa" value="vertical" />
     <ref role="1XX52x" to="myiq:Z$zlZaZkvD" resolve="IndentedText" />
     <node concept="3EZMnI" id="4w$6EQbbzp9" role="2wV5jI">
-      <node concept="3F0ifn" id="4w$6EQbbzgU" role="3EZMnx">
-        <property role="3F0ifm" value="[-" />
-        <node concept="VPXOz" id="4w$6EQbbzgV" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="4w$6EQbbzgW" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="4w$6EQbbwtL" role="3EZMnx">
         <node concept="2iRfu4" id="4w$6EQbbwtM" role="2iSdaV" />
         <node concept="3F0A7n" id="4w$6EQbd75O" role="3EZMnx">
           <ref role="1NtTu8" to="myiq:4w$6EQbaM6c" resolve="indent" />
+          <node concept="Veino" id="1zqmxeUKbDD" role="3F10Kt">
+            <node concept="1iSF2X" id="1zqmxeUKbDF" role="VblUZ">
+              <property role="1iTho6" value="DDDDDD" />
+            </node>
+          </node>
         </node>
         <node concept="3F2HdR" id="4w$6EQbbzgX" role="3EZMnx">
           <ref role="1NtTu8" to="myiq:Z$zlZaZkvH" />
@@ -162,14 +163,8 @@
         <node concept="15ARfc" id="1zqmxeUK2I_" role="3F10Kt">
           <property role="3$6WeP" value="0" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="4w$6EQbbzhn" role="3EZMnx">
-        <property role="3F0ifm" value="-]" />
-        <node concept="VPXOz" id="4w$6EQbbzho" role="3F10Kt">
+        <node concept="VPXOz" id="1zqmxeUKcUs" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="4w$6EQbbzhp" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
         </node>
       </node>
       <node concept="2iRkQZ" id="4w$6EQbbzpa" role="2iSdaV" />
