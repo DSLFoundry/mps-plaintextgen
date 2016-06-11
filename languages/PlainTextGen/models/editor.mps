@@ -87,15 +87,6 @@
     <ref role="1XX52x" to="myiq:Z$zlZaZkvJ" resolve="Line" />
     <node concept="3EZMnI" id="Z$zlZaZp2N" role="2wV5jI">
       <node concept="2iRfu4" id="Z$zlZaZp2O" role="2iSdaV" />
-      <node concept="3F0ifn" id="Z$zlZaZp2R" role="3EZMnx">
-        <property role="3F0ifm" value="[&lt;" />
-        <node concept="VPXOz" id="4w$6EQbaLgy" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="2xaTMviKdrQ" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
-        </node>
-      </node>
       <node concept="3F2HdR" id="Z$zlZaZkvY" role="3EZMnx">
         <ref role="1NtTu8" to="myiq:Z$zlZaZkvM" />
         <node concept="4$FPG" id="4z_y7AIv81z" role="4_6I_">
@@ -116,16 +107,13 @@
         </node>
       </node>
       <node concept="3F0ifn" id="Z$zlZaZp32" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;]" />
-        <node concept="VPXOz" id="4w$6EQbaLeN" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <property role="3F0ifm" value="↵" />
         <node concept="VechU" id="2xaTMviKdtA" role="3F10Kt">
           <property role="Vb096" value="lightGray" />
         </node>
-      </node>
-      <node concept="VPXOz" id="4w$6EQbaF0r" role="3F10Kt">
-        <property role="VOm3f" value="true" />
+        <node concept="VPXOz" id="1zqmxeUJKGT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
