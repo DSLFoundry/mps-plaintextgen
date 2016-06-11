@@ -18,6 +18,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -109,6 +110,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3F0ifn" id="1Y_C27HYcH9" role="2czzBI">
+          <property role="3F0ifm" value="" />
         </node>
       </node>
       <node concept="3F0ifn" id="Z$zlZaZp32" role="3EZMnx">

@@ -809,11 +809,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3SKdUt" id="KbPw5Fc4iO" role="3cqZAp">
-                  <node concept="3SKdUq" id="KbPw5Fc4iQ" role="3SKWNk">
-                    <property role="3SKdUp" value="MPS text fields strip away the tabs, so we replace them by spaces." />
-                  </node>
-                </node>
                 <node concept="3clFbJ" id="3bf11hdOarR" role="3cqZAp">
                   <node concept="3clFbS" id="3bf11hdOarT" role="3clFbx">
                     <node concept="3clFbF" id="3bf11hdOb06" role="3cqZAp">
@@ -843,6 +838,11 @@
                   </node>
                   <node concept="9aQIb" id="KbPw5FcEfp" role="9aQIa">
                     <node concept="3clFbS" id="KbPw5FcEfq" role="9aQI4">
+                      <node concept="3SKdUt" id="KbPw5Fc4iO" role="3cqZAp">
+                        <node concept="3SKdUq" id="KbPw5Fc4iQ" role="3SKWNk">
+                          <property role="3SKdUp" value="MPS text fields strip away the tabs, so we replace them by spaces." />
+                        </node>
+                      </node>
                       <node concept="3cpWs8" id="KbPw5FcDep" role="3cqZAp">
                         <node concept="3cpWsn" id="KbPw5FcDeq" role="3cpWs9">
                           <property role="TrG5h" value="l" />
