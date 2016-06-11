@@ -47,6 +47,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -143,6 +144,7 @@
     <property role="3GE5qa" value="vertical" />
     <ref role="1XX52x" to="myiq:Z$zlZaZkvD" resolve="IndentedText" />
     <node concept="3EZMnI" id="4w$6EQbbzp9" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3EZMnI" id="4w$6EQbbwtL" role="3EZMnx">
         <node concept="2iRfu4" id="4w$6EQbbwtM" role="2iSdaV" />
         <node concept="3F0A7n" id="4w$6EQbd75O" role="3EZMnx">
@@ -186,6 +188,7 @@
     <property role="3GE5qa" value="vertical" />
     <ref role="1XX52x" to="myiq:Z$zlZaZO7_" resolve="VerticalLines" />
     <node concept="3EZMnI" id="Z$zlZaZO7L" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="Z$zlZaZPIh" role="3EZMnx">
         <property role="3F0ifm" value="[/" />
         <node concept="VPXOz" id="4w$6EQbaL0V" role="3F10Kt">
