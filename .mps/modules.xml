@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/PlainTextGen/PlainTextGen.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TestLanguage/TestLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="" />
     </projectModules>
   </component>
 </project>
