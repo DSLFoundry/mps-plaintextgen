@@ -95,7 +95,7 @@
         <property role="333NGx" value="      " />
         <node concept="356sEK" id="3bf11hdN3$J" role="356sEM">
           <node concept="356sEF" id="3bf11hdN3$K" role="356sEH">
-            <property role="TrG5h" value="TestText " />
+            <property role="TrG5h" value="TestText" />
           </node>
           <node concept="356sEF" id="3bf11hdN3$N" role="356sEH">
             <property role="TrG5h" value="text2" />
