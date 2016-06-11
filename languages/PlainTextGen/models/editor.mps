@@ -34,6 +34,10 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1233823429331" name="jetbrains.mps.lang.editor.structure.HorizontalGapStyleClassItem" flags="ln" index="15ARfc" />
+      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
+        <property id="1215007802031" name="value" index="3$6WeP" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -89,6 +93,9 @@
       <node concept="2iRfu4" id="Z$zlZaZp2O" role="2iSdaV" />
       <node concept="3F2HdR" id="Z$zlZaZkvY" role="3EZMnx">
         <ref role="1NtTu8" to="myiq:Z$zlZaZkvM" />
+        <node concept="15ARfc" id="1zqmxeUJU3b" role="3F10Kt">
+          <property role="3$6WeP" value="0" />
+        </node>
         <node concept="4$FPG" id="4z_y7AIv81z" role="4_6I_">
           <node concept="3clFbS" id="4z_y7AIv81$" role="2VODD2">
             <node concept="3cpWs6" id="4z_y7AIv82c" role="3cqZAp">
