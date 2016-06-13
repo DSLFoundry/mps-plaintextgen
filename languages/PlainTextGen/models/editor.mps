@@ -43,6 +43,8 @@
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
       </concept>
+      <concept id="1215007883204" name="jetbrains.mps.lang.editor.structure.PaddingLeftStyleClassItem" flags="ln" index="3$7fVu" />
+      <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -119,14 +121,11 @@
           <property role="3F0ifm" value="" />
         </node>
       </node>
-      <node concept="3F0ifn" id="Z$zlZaZp32" role="3EZMnx">
-        <property role="3F0ifm" value="↵" />
-        <node concept="VechU" id="2xaTMviKdtA" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
-        </node>
-        <node concept="VPXOz" id="1zqmxeUJKGT" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="3F1sOY" id="4q7d2VGN$B6" role="3EZMnx">
+        <ref role="1NtTu8" to="myiq:4q7d2VGN$B3" />
+      </node>
+      <node concept="15ARfc" id="4q7d2VGNAl4" role="3F10Kt">
+        <property role="3$6WeP" value="0" />
       </node>
     </node>
   </node>
@@ -240,6 +239,28 @@
         <ref role="1NtTu8" to="myiq:Z$zlZaZSbU" />
       </node>
       <node concept="2iRkQZ" id="Z$zlZaZkP6" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4q7d2VGNzUl">
+    <property role="3GE5qa" value="horizontal" />
+    <ref role="1XX52x" to="myiq:4q7d2VGNiCW" resolve="NewlineMarker" />
+    <node concept="3F0ifn" id="4q7d2VGNzUn" role="2wV5jI">
+      <property role="3F0ifm" value="↵" />
+      <node concept="VechU" id="4q7d2VGNzUt" role="3F10Kt">
+        <property role="Vb096" value="lightGray" />
+      </node>
+      <node concept="VPXOz" id="4q7d2VGNzUu" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="15ARfc" id="4q7d2VGNzWn" role="3F10Kt">
+        <property role="3$6WeP" value="0" />
+      </node>
+      <node concept="3$7fVu" id="4q7d2VGN_wm" role="3F10Kt">
+        <property role="3$6WeP" value="0" />
+      </node>
+      <node concept="3$7jql" id="4q7d2VGN_yk" role="3F10Kt">
+        <property role="3$6WeP" value="0" />
+      </node>
     </node>
   </node>
 </model>

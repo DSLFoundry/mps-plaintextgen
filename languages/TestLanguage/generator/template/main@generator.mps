@@ -28,8 +28,10 @@
       </concept>
     </language>
     <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="PlainTextGen">
+      <concept id="5082088080656902716" name="PlainTextGen.structure.NewlineMarker" flags="ng" index="2EixSi" />
       <concept id="1145195647825954804" name="PlainTextGen.structure.word" flags="ng" index="356sEF" />
       <concept id="1145195647825954799" name="PlainTextGen.structure.Line" flags="ng" index="356sEK">
+        <child id="5082088080656976323" name="newlineMarker" index="2EinRH" />
         <child id="1145195647825954802" name="words" index="356sEH" />
       </concept>
       <concept id="1145195647825954793" name="PlainTextGen.structure.IndentedText" flags="ng" index="356sEQ">
@@ -71,6 +73,7 @@
             <node concept="356sEF" id="pWUoI9jTq7" role="356sEH">
               <property role="TrG5h" value="this" />
             </node>
+            <node concept="2EixSi" id="4q7d2VGN_tN" role="2EinRH" />
           </node>
           <node concept="356sEK" id="pWUoI9jTqi" role="356WMR">
             <node concept="356sEF" id="pWUoI9jTqj" role="356sEH">
@@ -82,6 +85,7 @@
             <node concept="356sEF" id="pWUoI9jTqs" role="356sEH">
               <property role="TrG5h" value="a bit" />
             </node>
+            <node concept="2EixSi" id="4q7d2VGN_tR" role="2EinRH" />
           </node>
           <node concept="356sEQ" id="pWUoI9jTqC" role="356WMR">
             <property role="333NGx" value=" " />
@@ -89,6 +93,7 @@
               <node concept="356sEF" id="pWUoI9jTr6" role="356sEH">
                 <property role="TrG5h" value="weird" />
               </node>
+              <node concept="2EixSi" id="4q7d2VGN_tT" role="2EinRH" />
             </node>
           </node>
           <node concept="356sEK" id="pWUoI9jTrl" role="356WMR">
@@ -101,8 +106,10 @@
                   <node concept="356sEF" id="pWUoI9jTrQ" role="356sEH">
                     <property role="TrG5h" value="cool" />
                   </node>
+                  <node concept="2EixSi" id="4q7d2VGN_tV" role="2EinRH" />
                 </node>
               </node>
+              <node concept="2EixSi" id="4q7d2VGN_u3" role="2EinRH" />
             </node>
             <node concept="356WMU" id="pWUoI9jTs0" role="356sEH">
               <node concept="356sEQ" id="pWUoI9jTs8" role="356WMR">
@@ -111,21 +118,26 @@
                   <node concept="356sEF" id="pWUoI9jTsj" role="356sEH">
                     <property role="TrG5h" value="when" />
                   </node>
+                  <node concept="2EixSi" id="4q7d2VGN_u5" role="2EinRH" />
                 </node>
               </node>
               <node concept="356sEK" id="pWUoI9jTs$" role="356WMR">
                 <node concept="356sEF" id="pWUoI9jTs_" role="356sEH">
                   <property role="TrG5h" value="it" />
                 </node>
+                <node concept="2EixSi" id="4q7d2VGN_u7" role="2EinRH" />
               </node>
               <node concept="356sEK" id="pWUoI9jTsR" role="356WMR">
                 <node concept="356sEF" id="pWUoI9jTsS" role="356sEH">
                   <property role="TrG5h" value="works" />
                 </node>
+                <node concept="2EixSi" id="4q7d2VGN_u9" role="2EinRH" />
               </node>
             </node>
+            <node concept="2EixSi" id="4q7d2VGN_ub" role="2EinRH" />
           </node>
         </node>
+        <node concept="2EixSi" id="4q7d2VGN_tP" role="2EinRH" />
       </node>
     </node>
     <node concept="n94m4" id="3bf11hdN3$D" role="lGtFl">
