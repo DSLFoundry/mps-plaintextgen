@@ -40,57 +40,6 @@
     </echoxml>
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen" />
-    <mkdir dir="${build.tmp}/default/TestLanguage.jar" />
-    <mkdir dir="${build.tmp}/default/TestLanguage.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/TestLanguage.jar/META-INF/module.xml">
-      <module namespace="TestLanguage" type="language" uuid="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
-          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="TestLanguage-src.jar" descriptor="TestLanguage.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/TestLanguage.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/TestLanguage" />
-      <fileset dir="${basedir}/languages/TestLanguage" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/TestLanguage/source_gen" includes="**/trace.info, **/exports" />
-      <fileset dir="${build.tmp}/default/TestLanguage.jar" />
-    </jar>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/TestLanguage-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/TestLanguage#3661149507326583883" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-TestLanguage-generator-template">
-      <fileset dir="${basedir}/languages/TestLanguage/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-TestLanguage-models">
-      <fileset dir="${basedir}/languages/TestLanguage/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/TestLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/TestLanguage/generator/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-      </fileset>
-      <fileset dir="${basedir}/languages/TestLanguage/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-      </fileset>
-      <zipfileset file="${basedir}/languages/TestLanguage/TestLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-TestLanguage-generator-template" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-TestLanguage-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.jar" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.dslfoundry.plaintextgen.jar/META-INF/module.xml">
@@ -145,31 +94,6 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.dslfoundry.plaintextgen-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.dslfoundry.plaintextgen-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/TestSolution.jar" />
-    <mkdir dir="${build.tmp}/default/TestSolution.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/TestSolution.jar/META-INF/module.xml">
-      <module namespace="TestSolution" type="solution" uuid="656d5e8d-33ef-4f6c-b197-7fbc05468208">
-        <dependencies />
-        <sources jar="TestSolution-src.jar" descriptor="TestSolution.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/TestSolution.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/TestSolution" />
-      <fileset dir="${basedir}/solutions/TestSolution" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/TestSolution/source_gen" includes="**/trace.info, **/exports" />
-      <fileset dir="${build.tmp}/default/TestSolution.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-TestSolution-models">
-      <fileset dir="${basedir}/solutions/TestSolution/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/TestSolution-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/TestSolution/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-      </fileset>
-      <zipfileset file="${basedir}/solutions/TestSolution/TestSolution.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-TestSolution-models" prefix="module/models" />
-    </jar>
     <zip destfile="${build.layout}/com.dslfoundry.plaintextgen.zip">
       <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip" />
     </zip>
@@ -187,7 +111,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.TestLanguage, java.compile.TestLanguage#3661149507326583883, java.compile.com.dslfoundry.plaintextgen, java.compile.com.dslfoundry.plaintextgen#5198309202559528987, java.compile.TestSolution" />
+  <target name="compileJava" depends="java.compile.com.dslfoundry.plaintextgen, java.compile.com.dslfoundry.plaintextgen#5198309202559528987" />
   
   <target name="processResources" />
   
@@ -266,12 +190,9 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <chunk>
-        <module file="${basedir}/languages/TestLanguage/TestLanguage.mpl" />
         <module file="${basedir}/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.mpl" />
       </chunk>
-      <chunk>
-        <module file="${basedir}/solutions/TestSolution/TestSolution.msd" />
-      </chunk>
+      <chunk />
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -284,87 +205,6 @@
   </target>
   
   <target name="makeDependents" />
-  
-  <target name="java.compile.TestLanguage" depends="java.compile.com.dslfoundry.plaintextgen, fetchDependencies">
-    <mkdir dir="${basedir}/languages/TestLanguage/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/TestLanguage" />
-    <javac destdir="${build.tmp}/java/out/TestLanguage" fork="true" encoding="utf8" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/TestLanguage/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.dslfoundry.plaintextgen" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.TestLanguage#3661149507326583883" depends="java.compile.TestLanguage, java.compile.com.dslfoundry.plaintextgen, fetchDependencies">
-    <mkdir dir="${basedir}/languages/TestLanguage/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/TestLanguage#3661149507326583883" />
-    <javac destdir="${build.tmp}/java/out/TestLanguage#3661149507326583883" fork="true" encoding="utf8" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/TestLanguage/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <pathelement path="${build.tmp}/java/out/TestLanguage" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.dslfoundry.plaintextgen" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-      </classpath>
-    </javac>
-  </target>
   
   <target name="java.compile.com.dslfoundry.plaintextgen" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/com.dslfoundry.plaintextgen/source_gen" />
@@ -456,23 +296,8 @@
     </javac>
   </target>
   
-  <target name="java.compile.TestSolution">
-    <mkdir dir="${basedir}/solutions/TestSolution/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/TestSolution" />
-    <javac destdir="${build.tmp}/java/out/TestSolution" fork="true" encoding="utf8" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/solutions/TestSolution/source_gen" />
-      </src>
-      <classpath />
-    </javac>
-  </target>
-  
   <target name="cleanSources">
-    <delete dir="${basedir}/languages/TestLanguage/source_gen" />
     <delete dir="${basedir}/languages/com.dslfoundry.plaintextgen/source_gen" />
-    <delete dir="${basedir}/languages/TestLanguage/generator/source_gen" />
-    <delete dir="${basedir}/solutions/TestSolution/source_gen" />
     <delete dir="${basedir}/languages/com.dslfoundry.plaintextgen/generator/source_gen" />
   </target>
 </project>

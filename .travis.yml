@@ -1,0 +1,15 @@
+language: java
+jdk:
+- oraclejdk8
+before_install: wget http://download.jetbrains.com/mps/33/MPS-3.3.5.zip
+install: unzip MPS-3.3.5.zip
+script: ant -Dmps_home=./MPS\ 3.3 clean generate assemble
+deploy:
+  provider: releases
+  api_key:
+    secure: A0tjzaQ6FGJ+aPnr4KK65JW+4pXlKizxf8oqv2vJOS/jFunkpKyg6uyC+LRG6NWjzSDLjYllk0pIhRw4YrQjch0LMMQGRR061MOVjhxplupG/xgJu3Ak03tzTPpbtjzg/FStbFKV2WNRVKNMDniXHByxNbkFWoY5jOP3H0IRfwABdMboT2XJRGf9EOhxgqgVpOp7aSQgMOrgnEPyWSE7qIrq0wAbwlt9L1JSUB0367gcyC4LHG9/I2Jcr5QyNJKZgawPQLPWjQNMvtPkSTpP2m3M5Oz7IFiNAXQ3H2xY+rkZHg4r1ytH9IRBb1s0FI7mfmrY2zmw6kOhq3G72oIy+4tAU88nbYI1W/Ndy8HSqpbOkS5rCpQJxlHBJps0TnBuSHY7GAP4j88m0gd7PnD5tF+2r6iuVA/SQsQYrfJPq5Yui7RiX/77BAnzByts716RGc91K1dDdlkvwUgpfc+kdhZl38v93Ky41+5UGCDf0T3Ck/3WgUDY3mJbaL9dOf4UKFkrj9D0Aq7sN7yqr3lia7J1GIdRB3M1aBmFH2ycfkPYaJDVdAwbTxzlgOTR2lyRLxEDhwLMzvYEkEsVDQDroasOM3+lcjUHXP+DtEngVgf+jZkQkiyKutEvZ564hjrBAYpAVeTF4EJBE7XkSKvEOh6GndCr6k/Nasmzy7BDVu8=
+  file: "build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.zip"
+  skip_cleanup: true
+  on:
+    repo: DSLFoundry/mps-plaintextgen
+    tags: true

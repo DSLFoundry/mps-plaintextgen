@@ -87,7 +87,6 @@
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
-      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -153,34 +152,6 @@
     </node>
     <node concept="2G$12M" id="2NTGYE$JTH5" role="3989C9">
       <property role="TrG5h" value="com.dslfoundry.plaintextgen" />
-      <node concept="1E1JtD" id="2NTGYE$JTGS" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="TestLanguage" />
-        <property role="3LESm3" value="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" />
-        <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="2NTGYE$JTGN" role="3LF7KH">
-          <node concept="2Ry0Ak" id="2NTGYE$JTGO" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="2NTGYE$JTGP" role="2Ry0An">
-              <property role="2Ry0Am" value="TestLanguage" />
-              <node concept="2Ry0Ak" id="2NTGYE$JTGQ" role="2Ry0An">
-                <property role="2Ry0Am" value="TestLanguage.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="2NTGYE$JTHk" role="1TViLv">
-          <property role="TrG5h" value="TestLanguage#3661149507326583883" />
-          <property role="3LESm3" value="ccd826e7-e85c-4fb5-8a54-657940fd9fa7" />
-          <property role="2GAjPV" value="false" />
-          <node concept="1SiIV0" id="2NTGYE$JTHX" role="3bR37C">
-            <node concept="3bR9La" id="2NTGYE$JTHY" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtD" id="2NTGYE$JTGY" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.dslfoundry.plaintextgen" />
@@ -225,23 +196,6 @@
           <property role="TrG5h" value="com.dslfoundry.plaintextgen#5198309202559528987" />
           <property role="3LESm3" value="ebbc2a81-6618-40a2-b3b8-997fd1520167" />
           <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtA" id="2NTGYE$JTH4" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="TestSolution" />
-        <property role="3LESm3" value="656d5e8d-33ef-4f6c-b197-7fbc05468208" />
-        <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="2NTGYE$JTGZ" role="3LF7KH">
-          <node concept="2Ry0Ak" id="2NTGYE$JTH0" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="2NTGYE$JTH1" role="2Ry0An">
-              <property role="2Ry0Am" value="TestSolution" />
-              <node concept="2Ry0Ak" id="2NTGYE$JTH2" role="2Ry0An">
-                <property role="2Ry0Am" value="TestSolution.msd" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
