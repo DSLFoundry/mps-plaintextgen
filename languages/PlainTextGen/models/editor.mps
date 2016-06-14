@@ -155,7 +155,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="4w$6EQbbzgX" role="3EZMnx">
-          <ref role="1NtTu8" to="myiq:Z$zlZaZkvH" />
+          <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" />
           <node concept="VPXOz" id="4w$6EQbbzgY" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -173,14 +173,32 @@
         <property role="3$6WeP" value="0" />
       </node>
     </node>
-    <node concept="3EZMnI" id="4w$6EQbaMfq" role="6VMZX">
-      <node concept="2iRfu4" id="4w$6EQbaMfr" role="2iSdaV" />
-      <node concept="3F0ifn" id="4w$6EQbaMk0" role="3EZMnx">
-        <property role="3F0ifm" value="indentation level:" />
+    <node concept="3EZMnI" id="6gwxh6GcxY7" role="6VMZX">
+      <node concept="3EZMnI" id="6gwxh6GcxZe" role="3EZMnx">
+        <node concept="VPM3Z" id="6gwxh6GcxZg" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6gwxh6GcxZi" role="3EZMnx">
+          <property role="3F0ifm" value="Horizontal alignment:" />
+        </node>
+        <node concept="3F0A7n" id="6gwxh6GcxZy" role="3EZMnx">
+          <ref role="1NtTu8" to="myiq:6gwxh6GcoAr" resolve="align" />
+        </node>
+        <node concept="2iRfu4" id="6gwxh6GcxZj" role="2iSdaV" />
       </node>
-      <node concept="3F0A7n" id="4w$6EQbaMk5" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:4w$6EQbaM6c" resolve="indent" />
+      <node concept="3EZMnI" id="4w$6EQbaMfq" role="3EZMnx">
+        <node concept="2iRfu4" id="4w$6EQbaMfr" role="2iSdaV" />
+        <node concept="3F0ifn" id="4w$6EQbaMk0" role="3EZMnx">
+          <property role="3F0ifm" value="indentation level   :" />
+        </node>
+        <node concept="3F0A7n" id="4w$6EQbaMk5" role="3EZMnx">
+          <ref role="1NtTu8" to="myiq:4w$6EQbaM6c" resolve="indent" />
+          <node concept="Veino" id="6gwxh6GcxZ3" role="3F10Kt">
+            <property role="Vb096" value="lightGray" />
+          </node>
+        </node>
       </node>
+      <node concept="2iRkQZ" id="6gwxh6GcxY8" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="Z$zlZaZO7J">
@@ -198,7 +216,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="Z$zlZaZO7S" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:Z$zlZaZO7C" />
+        <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" />
         <node concept="2iRkQZ" id="Z$zlZaZO7U" role="2czzBx" />
         <node concept="VPXOz" id="4w$6EQbavmu" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -217,6 +235,18 @@
       <node concept="15ARfc" id="1zqmxeUK3ow" role="3F10Kt">
         <property role="3$6WeP" value="0" />
       </node>
+    </node>
+    <node concept="3EZMnI" id="6gwxh6GcxZL" role="6VMZX">
+      <node concept="VPM3Z" id="6gwxh6GcxZM" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+      <node concept="3F0ifn" id="6gwxh6GcxZN" role="3EZMnx">
+        <property role="3F0ifm" value="Horizontal alignment:" />
+      </node>
+      <node concept="3F0A7n" id="6gwxh6GcxZO" role="3EZMnx">
+        <ref role="1NtTu8" to="myiq:6gwxh6GcoAr" resolve="align" />
+      </node>
+      <node concept="2iRfu4" id="6gwxh6GcxZP" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="Z$zlZaZkOW">

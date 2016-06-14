@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -19,7 +20,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -73,9 +76,6 @@
     <node concept="PrWs8" id="Z$zlZaZkvK" role="PzmwI">
       <ref role="PrY4T" node="Z$zlZaZkvE" resolve="IText" />
     </node>
-    <node concept="PrWs8" id="4z_y7AIuQRE" role="PzmwI">
-      <ref role="PrY4T" node="7g_oPKUKThq" resolve="ILineElement" />
-    </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZkvO">
     <property role="1pbfSe" value="622733997" />
@@ -105,17 +105,8 @@
       <property role="TrG5h" value="indent" />
       <ref role="AX2Wp" node="4w$6EQbc7yf" resolve="Indentation" />
     </node>
-    <node concept="1TJgyj" id="Z$zlZaZkvH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="Z$zlZaZkvE" resolve="IText" />
-    </node>
-    <node concept="PrWs8" id="Z$zlZaZkvF" role="PzmwI">
-      <ref role="PrY4T" node="Z$zlZaZkvE" resolve="IText" />
-    </node>
-    <node concept="PrWs8" id="7g_oPKUKThC" role="PzmwI">
-      <ref role="PrY4T" node="7g_oPKUKThq" resolve="ILineElement" />
+    <node concept="PrWs8" id="6gwxh6GbQuq" role="PzmwI">
+      <ref role="PrY4T" node="6gwxh6GbQu8" resolve="IVerticalGroup" />
     </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZO7_">
@@ -124,22 +115,16 @@
     <property role="3GE5qa" value="vertical" />
     <property role="34LRSv" value="/" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="Z$zlZaZO7C" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="Z$zlZaZkvE" resolve="IText" />
-    </node>
-    <node concept="PrWs8" id="Z$zlZaZO7A" role="PzmwI">
-      <ref role="PrY4T" node="Z$zlZaZkvE" resolve="IText" />
-    </node>
-    <node concept="PrWs8" id="7g_oPKUKThJ" role="PzmwI">
-      <ref role="PrY4T" node="7g_oPKUKThq" resolve="ILineElement" />
+    <node concept="PrWs8" id="6gwxh6GbRe2" role="PzmwI">
+      <ref role="PrY4T" node="6gwxh6GbQu8" resolve="IVerticalGroup" />
     </node>
   </node>
   <node concept="PlHQZ" id="Z$zlZaZkvE">
     <property role="1pbfSe" value="622734007" />
     <property role="TrG5h" value="IText" />
+    <node concept="PrWs8" id="6gwxh6Gdk9i" role="PrDN$">
+      <ref role="PrY4T" node="7g_oPKUKThq" resolve="ILineElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZkv$">
     <property role="1pbfSe" value="622734013" />
@@ -161,6 +146,24 @@
     <property role="TrG5h" value="NewlineMarker" />
     <property role="3GE5qa" value="horizontal" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="6gwxh6GbQu8">
+    <property role="1pbfSe" value="273673369" />
+    <property role="3GE5qa" value="vertical" />
+    <property role="TrG5h" value="IVerticalGroup" />
+    <node concept="1TJgyi" id="6gwxh6GcoAr" role="1TKVEl">
+      <property role="TrG5h" value="align" />
+      <ref role="AX2Wp" to="tpc2:hZ7kHEa" resolve="AlignEnum" />
+    </node>
+    <node concept="1TJgyj" id="6gwxh6GbQuo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lines" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="Z$zlZaZkvE" resolve="IText" />
+    </node>
+    <node concept="PrWs8" id="6gwxh6GbQu9" role="PrDN$">
+      <ref role="PrY4T" node="Z$zlZaZkvE" resolve="IText" />
+    </node>
   </node>
 </model>
 
