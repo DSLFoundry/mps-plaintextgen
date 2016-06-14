@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bc2503fd-3089-460a-b33b-fe60cb2a6277(PlainTextGen.typesystem)">
+<model ref="r:bc2503fd-3089-460a-b33b-fe60cb2a6277(com.dslfoundry.plaintextgen.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
