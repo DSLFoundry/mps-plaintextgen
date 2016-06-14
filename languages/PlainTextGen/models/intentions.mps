@@ -18,6 +18,9 @@
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -56,6 +59,11 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -63,10 +71,15 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -121,9 +134,75 @@
     <ref role="2ZfgGC" to="myiq:Z$zlZaZkvO" resolve="word" />
     <node concept="2S6ZIM" id="1SFgcLT$bhP" role="2ZfVej">
       <node concept="3clFbS" id="1SFgcLT$bhQ" role="2VODD2">
-        <node concept="3clFbF" id="1SFgcLT$evn" role="3cqZAp">
-          <node concept="Xl_RD" id="1SFgcLT$evm" role="3clFbG">
-            <property role="Xl_RC" value="Split word at selection into 3 words" />
+        <node concept="3cpWs8" id="2AdBM2T4Tbz" role="3cqZAp">
+          <node concept="3cpWsn" id="2AdBM2T4Tb$" role="3cpWs9">
+            <property role="TrG5h" value="contextCell" />
+            <node concept="3uibUv" id="2AdBM2T4Tb_" role="1tU5fm">
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+            </node>
+            <node concept="2OqwBi" id="2AdBM2T4TbA" role="33vP2m">
+              <node concept="1XNTG" id="2AdBM2T4TbB" role="2Oq$k0" />
+              <node concept="liA8E" id="2AdBM2T4TbC" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2AdBM2T4TbD" role="3cqZAp">
+          <node concept="3cpWsn" id="2AdBM2T4TbE" role="3cpWs9">
+            <property role="TrG5h" value="label" />
+            <node concept="3uibUv" id="2AdBM2T4TbF" role="1tU5fm">
+              <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
+            </node>
+            <node concept="10QFUN" id="2AdBM2T4TbG" role="33vP2m">
+              <node concept="3uibUv" id="2AdBM2T4TbH" role="10QFUM">
+                <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
+              </node>
+              <node concept="37vLTw" id="2AdBM2T4TbI" role="10QFUP">
+                <ref role="3cqZAo" node="2AdBM2T4Tb$" resolve="contextCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2AdBM2T4Tej" role="3cqZAp">
+          <node concept="3clFbS" id="2AdBM2T4Tel" role="3clFbx">
+            <node concept="3cpWs6" id="2AdBM2T4T0T" role="3cqZAp">
+              <node concept="Xl_RD" id="2AdBM2T4T46" role="3cqZAk">
+                <property role="Xl_RC" value="Split word at cursor" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eOVzh" id="2AdBM2T4TPa" role="3clFbw">
+            <node concept="3cmrfG" id="2AdBM2T4TPg" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="3cpWsd" id="2AdBM2T4Twz" role="3uHU7B">
+              <node concept="2OqwBi" id="2AdBM2T4Tj4" role="3uHU7B">
+                <node concept="37vLTw" id="2AdBM2T4TgQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2AdBM2T4TbE" resolve="label" />
+                </node>
+                <node concept="liA8E" id="2AdBM2T4TnR" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell_Label.getSelectionEnd():int" resolve="getSelectionEnd" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2AdBM2T4TAq" role="3uHU7w">
+                <node concept="37vLTw" id="2AdBM2T4Tz8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2AdBM2T4TbE" resolve="label" />
+                </node>
+                <node concept="liA8E" id="2AdBM2T4TFt" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell_Label.getSelectionStart():int" resolve="getSelectionStart" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2AdBM2T4UiQ" role="9aQIa">
+            <node concept="3clFbS" id="2AdBM2T4UiR" role="9aQI4">
+              <node concept="3cpWs6" id="2AdBM2T4UiS" role="3cqZAp">
+                <node concept="Xl_RD" id="2AdBM2T4UiT" role="3cqZAk">
+                  <property role="Xl_RC" value="Split selection into word" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
