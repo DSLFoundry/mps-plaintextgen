@@ -6,7 +6,7 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" name="TestLanguage" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="PlainTextGen" version="0" />
+    <use id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,21 +27,22 @@
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
     </language>
-    <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="PlainTextGen">
-      <concept id="5082088080656902716" name="PlainTextGen.structure.NewlineMarker" flags="ng" index="2EixSi" />
-      <concept id="1145195647825954804" name="PlainTextGen.structure.word" flags="ng" index="356sEF" />
-      <concept id="1145195647825954799" name="PlainTextGen.structure.Line" flags="ng" index="356sEK">
+    <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen">
+      <concept id="5082088080656902716" name="com.dslfoundry.plaintextgen.structure.NewlineMarker" flags="ng" index="2EixSi" />
+      <concept id="1145195647825954804" name="com.dslfoundry.plaintextgen.structure.word" flags="ng" index="356sEF" />
+      <concept id="1145195647825954799" name="com.dslfoundry.plaintextgen.structure.Line" flags="ng" index="356sEK">
         <child id="5082088080656976323" name="newlineMarker" index="2EinRH" />
         <child id="1145195647825954802" name="words" index="356sEH" />
       </concept>
-      <concept id="1145195647825954793" name="PlainTextGen.structure.IndentedText" flags="ng" index="356sEQ">
+      <concept id="1145195647825954793" name="com.dslfoundry.plaintextgen.structure.IndentedText" flags="ng" index="356sEQ">
         <property id="5198309202558919052" name="indent" index="333NGx" />
       </concept>
-      <concept id="1145195647825954788" name="PlainTextGen.structure.TextgenText" flags="ng" index="356sEV">
+      <concept id="1145195647825954788" name="com.dslfoundry.plaintextgen.structure.TextgenText" flags="ng" index="356sEV">
+        <property id="5407518469085446424" name="ext" index="3Le9LX" />
         <child id="1145195647826100986" name="content" index="356KY_" />
       </concept>
-      <concept id="1145195647826084325" name="PlainTextGen.structure.VerticalLines" flags="ng" index="356WMU" />
-      <concept id="7214912913997260680" name="PlainTextGen.structure.IVerticalGroup" flags="ng" index="383Yap">
+      <concept id="1145195647826084325" name="com.dslfoundry.plaintextgen.structure.VerticalLines" flags="ng" index="356WMU" />
+      <concept id="7214912913997260680" name="com.dslfoundry.plaintextgen.structure.IVerticalGroup" flags="ng" index="383Yap">
         <property id="7214912913997400475" name="align" index="384gMa" />
         <child id="7214912913997260696" name="lines" index="383Ya9" />
       </concept>
@@ -59,11 +60,12 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="3bf11hdN2CM" role="3lj3bC">
       <ref role="30HIoZ" to="b7rd:3bf11hdN2og" resolve="TestConcept" />
-      <ref role="3lhOvi" node="3bf11hdN3$B" resolve="map_TestConcept.txt" />
+      <ref role="3lhOvi" node="3bf11hdN3$B" resolve="map_TestConcept" />
     </node>
   </node>
   <node concept="356sEV" id="3bf11hdN3$B">
-    <property role="TrG5h" value="map_TestConcept.txt" />
+    <property role="TrG5h" value="map_TestConcept" />
+    <property role="3Le9LX" value=".txt" />
     <node concept="356WMU" id="pWUoI9jkQY" role="356KY_">
       <property role="384gMa" value="CENTER" />
       <node concept="356sEK" id="6gwxh6GdRMk" role="383Ya9">
