@@ -197,6 +197,12 @@
           <property role="3LESm3" value="ebbc2a81-6618-40a2-b3b8-997fd1520167" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="4GbnmmUeWl$" role="3bR37C">
+          <node concept="3bR9La" id="4GbnmmUeWl_" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
