@@ -8,6 +8,7 @@
   <sourcePath />
   <languageVersions>
     <language id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" fqName="TestLanguage" version="0" />
+    <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" fqName="com.dslfoundry.plaintextgen" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

@@ -11,8 +11,17 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
         <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -67,7 +76,7 @@
     <node concept="1TJgyj" id="Z$zlZaZkvM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="words" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7g_oPKUKThq" resolve="ILineElement" />
     </node>
     <node concept="1TJgyj" id="4q7d2VGN$B3" role="1TKVEi">
@@ -172,7 +181,7 @@
     <property role="TrG5h" value="IVerticalGroup" />
     <node concept="1TJgyi" id="6gwxh6GcoAr" role="1TKVEl">
       <property role="TrG5h" value="align" />
-      <ref role="AX2Wp" to="tpc2:hZ7kHEa" resolve="AlignEnum" />
+      <ref role="AX2Wp" node="2jBmyzyFesB" resolve="TextAlignment" />
     </node>
     <node concept="1TJgyj" id="6gwxh6GbQuo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -187,6 +196,24 @@
   <node concept="PlHQZ" id="4GbnmmUbAAi">
     <property role="1pbfSe" value="87672567" />
     <property role="TrG5h" value="ITextGenElement" />
+  </node>
+  <node concept="AxPO7" id="2jBmyzyFesB">
+    <property role="3GE5qa" value="vertical" />
+    <property role="TrG5h" value="TextAlignment" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="2jBmyzyFesC" role="M5hS2">
+      <property role="1uS6qv" value="left" />
+      <property role="1uS6qo" value="◧" />
+    </node>
+    <node concept="M4N5e" id="2jBmyzyFesD" role="M5hS2">
+      <property role="1uS6qv" value="center" />
+      <property role="1uS6qo" value="◫" />
+    </node>
+    <node concept="M4N5e" id="2jBmyzyFesG" role="M5hS2">
+      <property role="1uS6qo" value="◨" />
+      <property role="1uS6qv" value="right" />
+    </node>
   </node>
 </model>
 
