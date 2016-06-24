@@ -30,6 +30,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>com.dslfoundry.plaintextgen</id>
         <name>com.dslfoundry.plaintextgen</name>
+        <description>Alternative Textgen for JetBrains MPS using regular reduction rules</description>
         <version>1.0</version>
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>

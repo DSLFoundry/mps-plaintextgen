@@ -86,6 +86,7 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -185,6 +186,11 @@
           <node concept="2pMdtt" id="2aMbqeN3MXx" role="2pMdts">
             <property role="2pMdty" value="143.1" />
           </node>
+        </node>
+      </node>
+      <node concept="3_J27D" id="6HJqx3w3Loa" role="3s6cr7">
+        <node concept="3Mxwew" id="6HJqx3w3Loc" role="3MwsjC">
+          <property role="3MwjfP" value="Alternative Textgen for JetBrains MPS using regular reduction rules" />
         </node>
       </node>
     </node>
