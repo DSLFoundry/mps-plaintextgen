@@ -45,13 +45,16 @@
       </concept>
       <concept id="1136916919141" name="jetbrains.mps.lang.editor.structure.CellKeyMapItem" flags="lg" index="2PxR9H">
         <property id="1136916941877" name="description" index="2PxWOX" />
+        <property id="1163507208434" name="showInPopup" index="3ArL7W" />
         <child id="1136916998332" name="keystroke" index="2PyaAO" />
+        <child id="1136917325338" name="isApplicableFunction" index="2Pzqsi" />
         <child id="1136920925604" name="executeFunction" index="2PL9iG" />
       </concept>
       <concept id="1136916976737" name="jetbrains.mps.lang.editor.structure.CellKeyMapKeystroke" flags="ng" index="2Py5lD">
         <property id="1136923970223" name="modifiers" index="2PWKIB" />
         <property id="1136923970224" name="keycode" index="2PWKIS" />
       </concept>
+      <concept id="1136917249679" name="jetbrains.mps.lang.editor.structure.CellKeyMap_IsApplicableFunction" flags="in" index="2Pz7Y7" />
       <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
@@ -242,6 +245,7 @@
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -1137,7 +1141,8 @@
     <property role="2XBEHb" value="true" />
     <property role="TrG5h" value="TextGenElement_Keymap" />
     <node concept="2PxR9H" id="2jBmyzyHOOB" role="2QnnpI">
-      <property role="2PxWOX" value="Append line" />
+      <property role="2PxWOX" value="Append line [Ctrl+Enter]" />
+      <property role="3ArL7W" value="true" />
       <node concept="2Py5lD" id="2jBmyzyHOOC" role="2PyaAO">
         <property role="2PWKIB" value="ctrl" />
         <property role="2PWKIS" value="VK_ENTER" />
@@ -1169,9 +1174,30 @@
           </node>
         </node>
       </node>
+      <node concept="2Pz7Y7" id="75ixsGzY5sL" role="2Pzqsi">
+        <node concept="3clFbS" id="75ixsGzY5sM" role="2VODD2">
+          <node concept="3clFbF" id="75ixsGzY5vd" role="3cqZAp">
+            <node concept="2OqwBi" id="75ixsGzY5KC" role="3clFbG">
+              <node concept="2OqwBi" id="75ixsGzY5wW" role="2Oq$k0">
+                <node concept="0GJ7k" id="75ixsGzY5vc" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="75ixsGzY5zY" role="2OqNvi">
+                  <node concept="1xMEDy" id="75ixsGzY5$0" role="1xVPHs">
+                    <node concept="chp4Y" id="75ixsGzY5_C" role="ri$Ld">
+                      <ref role="cht4Q" to="myiq:6gwxh6GbQu8" resolve="IVerticalGroup" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="75ixsGzY5FY" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="75ixsGzY5Sq" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2PxR9H" id="2jBmyzyIja_" role="2QnnpI">
-      <property role="2PxWOX" value="Append word" />
+      <property role="2PxWOX" value="Append word [Ctrl+Shift+Enter]" />
+      <property role="3ArL7W" value="true" />
       <node concept="2Py5lD" id="2jBmyzyIjaA" role="2PyaAO">
         <property role="2PWKIB" value="ctrl+shift" />
         <property role="2PWKIS" value="VK_ENTER" />
@@ -1198,6 +1224,25 @@
               <node concept="WFELt" id="2jBmyzyIlJn" role="2OqNvi">
                 <ref role="1A0vxQ" to="myiq:Z$zlZaZkvO" resolve="word" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Pz7Y7" id="75ixsGzY5Uw" role="2Pzqsi">
+        <node concept="3clFbS" id="75ixsGzY5Ux" role="2VODD2">
+          <node concept="3clFbF" id="75ixsGzY5VM" role="3cqZAp">
+            <node concept="2OqwBi" id="75ixsGzY67b" role="3clFbG">
+              <node concept="2OqwBi" id="75ixsGzY5Xx" role="2Oq$k0">
+                <node concept="0GJ7k" id="75ixsGzY5VL" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="75ixsGzY603" role="2OqNvi">
+                  <node concept="1xMEDy" id="75ixsGzY605" role="1xVPHs">
+                    <node concept="chp4Y" id="75ixsGzY61c" role="ri$Ld">
+                      <ref role="cht4Q" to="myiq:Z$zlZaZkvJ" resolve="Line" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="75ixsGzY6fv" role="2OqNvi" />
             </node>
           </node>
         </node>
