@@ -163,7 +163,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -566,28 +565,18 @@
         <node concept="3F0A7n" id="Z$zlZaZkPt" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
+        <node concept="3F0ifn" id="2VrnFamenFA" role="3EZMnx">
+          <node concept="11L4FC" id="2VrnFameue4" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="2VrnFameuf1" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3F0A7n" id="4GbnmmUcW4z" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <property role="1$x2rV" value=".ext" />
           <ref role="1NtTu8" to="myiq:4GbnmmUcW4o" resolve="ext" />
-          <node concept="11L4FC" id="4GbnmmUdvF5" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-            <node concept="3nzxsE" id="4GbnmmUdwK7" role="3n$kyP">
-              <node concept="3clFbS" id="4GbnmmUdwK8" role="2VODD2">
-                <node concept="3clFbF" id="4GbnmmUdwLd" role="3cqZAp">
-                  <node concept="2OqwBi" id="4GbnmmUdx0r" role="3clFbG">
-                    <node concept="2OqwBi" id="4GbnmmUdwNO" role="2Oq$k0">
-                      <node concept="pncrf" id="4GbnmmUdwLc" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="4GbnmmUdwTz" role="2OqNvi">
-                        <ref role="3TsBF5" to="myiq:4GbnmmUcW4o" resolve="ext" />
-                      </node>
-                    </node>
-                    <node concept="17RvpY" id="4GbnmmUdx8I" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
         <node concept="2iRfu4" id="Z$zlZaZkPf" role="2iSdaV" />
       </node>

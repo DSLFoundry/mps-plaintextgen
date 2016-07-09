@@ -24,6 +24,7 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -70,8 +71,9 @@
   <node concept="1TIwiD" id="Z$zlZaZkvJ">
     <property role="1pbfSe" value="622734002" />
     <property role="TrG5h" value="Line" />
-    <property role="34LRSv" value="&lt;" />
     <property role="3GE5qa" value="horizontal" />
+    <property role="34LRSv" value="&gt;" />
+    <property role="R4oN_" value="Horizontal Collection" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="Z$zlZaZkvM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -97,6 +99,7 @@
     <property role="TrG5h" value="word" />
     <property role="3GE5qa" value="horizontal" />
     <property role="34LRSv" value="&quot;" />
+    <property role="R4oN_" value="Word" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="Z$zlZaZkvP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -115,6 +118,7 @@
     <property role="TrG5h" value="IndentedText" />
     <property role="3GE5qa" value="vertical" />
     <property role="34LRSv" value="-" />
+    <property role="R4oN_" value="Indent Collection" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4w$6EQbaM6c" role="1TKVEl">
       <property role="TrG5h" value="indent" />
@@ -132,6 +136,7 @@
     <property role="TrG5h" value="VerticalLines" />
     <property role="3GE5qa" value="vertical" />
     <property role="34LRSv" value="/" />
+    <property role="R4oN_" value="Vertical Collection" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6gwxh6GbRe2" role="PzmwI">
       <ref role="PrY4T" node="6gwxh6GbQu8" resolve="IVerticalGroup" />
