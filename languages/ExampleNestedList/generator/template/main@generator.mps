@@ -267,7 +267,7 @@
                 <node concept="3clFbS" id="3OQCuKRwvZy" role="2VODD2">
                   <node concept="3SKdUt" id="4muWmjxApB0" role="3cqZAp">
                     <node concept="3SKdUq" id="4muWmjxApB2" role="3SKWNk">
-                      <property role="3SKdUp" value="The &quot;+&quot; adds the node itself to its ancestors" />
+                      <property role="3SKdUp" value="The &quot;+&quot; includes the node itself to its ancestors" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="4muWmjxAfvA" role="3cqZAp">
