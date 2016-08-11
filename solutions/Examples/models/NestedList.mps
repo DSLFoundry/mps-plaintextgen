@@ -7,11 +7,11 @@
   <imports />
   <registry>
     <language id="a50fc719-4261-4a46-8e65-d98071469ff6" name="ExampleNestedList">
-      <concept id="7022720084780710583" name="ExampleNestedList.structure.Node" flags="ng" index="3FbOK2">
-        <child id="7022720084780710590" name="children" index="3FbOKb" />
+      <concept id="7022720084780710583" name="ExampleNestedList.structure.Branch" flags="ng" index="3FbOK2">
+        <child id="7022720084780710590" name="branches" index="3FbOKb" />
       </concept>
-      <concept id="7022720084780710582" name="ExampleNestedList.structure.List" flags="ng" index="3FbOK3">
-        <child id="7022720084780710584" name="roots" index="3FbOKd" />
+      <concept id="7022720084780710582" name="ExampleNestedList.structure.Tree" flags="ng" index="3FbOK3">
+        <child id="7022720084780710584" name="trunk" index="3FbOKd" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">

@@ -14,15 +14,12 @@
         </modelRoot>
       </models>
       <external-templates />
-      <dependencies>
-        <dependency reexport="false">990507d3-3527-4c54-bfe9-0ca3c9c6247a(com.dslfoundry.plaintextgen)</dependency>
-      </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" fqName="PlainTextGen" version="0" />
         <language id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" fqName="TestLanguage" version="-1" />
+        <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" fqName="com.dslfoundry.plaintextgen" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -44,7 +41,6 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2(TestLanguage)" version="0" />
         <module reference="ccd826e7-e85c-4fb5-8a54-657940fd9fa7(TestLanguage#3661149507326583883)" version="0" />
-        <module reference="990507d3-3527-4c54-bfe9-0ca3c9c6247a(com.dslfoundry.plaintextgen)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
