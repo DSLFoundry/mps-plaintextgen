@@ -37,14 +37,14 @@
   </registry>
   <node concept="1TIwiD" id="65PHFmamJEQ">
     <property role="1pbfSe" value="338644629" />
-    <property role="TrG5h" value="List" />
+    <property role="TrG5h" value="Tree" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="65PHFmamJES" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
-      <property role="20kJfa" value="roots" />
-      <ref role="20lvS9" node="65PHFmamJER" resolve="Node" />
+      <property role="20kJfa" value="trunk" />
+      <ref role="20lvS9" node="65PHFmamJER" resolve="Branch" />
     </node>
     <node concept="PrWs8" id="65PHFmamJEW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -52,13 +52,13 @@
   </node>
   <node concept="1TIwiD" id="65PHFmamJER">
     <property role="1pbfSe" value="338644628" />
-    <property role="TrG5h" value="Node" />
+    <property role="TrG5h" value="Branch" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="65PHFmamJEY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
-      <property role="20kJfa" value="children" />
-      <ref role="20lvS9" node="65PHFmamJER" resolve="Node" />
+      <property role="20kJfa" value="branches" />
+      <ref role="20lvS9" node="65PHFmamJER" resolve="Branch" />
     </node>
     <node concept="PrWs8" id="65PHFmamJEU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
