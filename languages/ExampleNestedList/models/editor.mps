@@ -46,7 +46,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="65PHFmamJMH">
-    <ref role="1XX52x" to="t6jl:65PHFmamJER" resolve="Node" />
+    <ref role="1XX52x" to="t6jl:65PHFmamJER" resolve="Branch" />
     <node concept="3EZMnI" id="65PHFmamJMM" role="2wV5jI">
       <node concept="l2Vlx" id="65PHFmamJMN" role="2iSdaV" />
       <node concept="3F0ifn" id="65PHFmamJNn" role="3EZMnx">
@@ -71,11 +71,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="65PHFmamNa8">
-    <ref role="1XX52x" to="t6jl:65PHFmamJEQ" resolve="List" />
+    <ref role="1XX52x" to="t6jl:65PHFmamJEQ" resolve="Tree" />
     <node concept="3EZMnI" id="65PHFmamNak" role="2wV5jI">
       <node concept="l2Vlx" id="65PHFmamNal" role="2iSdaV" />
       <node concept="3F0ifn" id="65PHFmamNaw" role="3EZMnx">
-        <property role="3F0ifm" value="List" />
+        <property role="3F0ifm" value="Tree" />
       </node>
       <node concept="3F0A7n" id="65PHFmamNaE" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
