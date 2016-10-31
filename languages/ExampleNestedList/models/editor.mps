@@ -2,7 +2,7 @@
 <model ref="r:cc9307c6-7dee-4262-b611-2009b24f5809(ExampleNestedList.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -56,7 +56,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F2HdR" id="65PHFmamJMZ" role="3EZMnx">
-        <ref role="1NtTu8" to="t6jl:65PHFmamJEY" />
+        <ref role="1NtTu8" to="t6jl:65PHFmamJEY" resolve="branches" />
         <node concept="l2Vlx" id="65PHFmamJN1" role="2czzBx" />
         <node concept="pVoyu" id="65PHFmamJN8" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -81,7 +81,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F2HdR" id="65PHFmamNaf" role="3EZMnx">
-        <ref role="1NtTu8" to="t6jl:65PHFmamJES" />
+        <ref role="1NtTu8" to="t6jl:65PHFmamJES" resolve="trunk" />
         <node concept="l2Vlx" id="65PHFmamNai" role="2czzBx" />
         <node concept="pVoyu" id="65PHFmamNaK" role="3F10Kt">
           <property role="VOm3f" value="true" />

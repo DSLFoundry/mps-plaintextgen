@@ -2,7 +2,8 @@
 <model ref="r:9a91b5e6-ae62-4c53-acd2-6de1a1816316(com.dslfoundry.plaintextgen.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -24,9 +25,9 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -42,12 +43,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -61,30 +64,32 @@
     </language>
   </registry>
   <node concept="PlHQZ" id="7g_oPKUKThq">
-    <property role="1pbfSe" value="1360463946" />
     <property role="3GE5qa" value="horizontal" />
     <property role="TrG5h" value="ILineElement" />
+    <property role="EcuMT" value="8369204730311971930" />
     <node concept="PrWs8" id="4GbnmmUcBte" role="PrDN$">
       <ref role="PrY4T" node="4GbnmmUbAAi" resolve="ITextGenElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZkvJ">
-    <property role="1pbfSe" value="622734002" />
     <property role="TrG5h" value="Line" />
     <property role="3GE5qa" value="horizontal" />
     <property role="34LRSv" value="&gt;" />
     <property role="R4oN_" value="Horizontal Collection" />
+    <property role="EcuMT" value="1145195647825954799" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="Z$zlZaZkvM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="words" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1145195647825954802" />
       <ref role="20lvS9" node="7g_oPKUKThq" resolve="ILineElement" />
     </node>
     <node concept="1TJgyj" id="4q7d2VGN$B3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="newlineMarker" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5082088080656976323" />
       <ref role="20lvS9" node="4q7d2VGNiCW" resolve="NewlineMarker" />
     </node>
     <node concept="PrWs8" id="Z$zlZaZkvK" role="PzmwI">
@@ -95,11 +100,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZkvO">
-    <property role="1pbfSe" value="622733997" />
     <property role="TrG5h" value="word" />
     <property role="3GE5qa" value="horizontal" />
     <property role="34LRSv" value="&quot;" />
     <property role="R4oN_" value="Word" />
+    <property role="EcuMT" value="1145195647825954804" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="Z$zlZaZkvP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -114,14 +119,15 @@
     <property role="FLfZY" value="( )*" />
   </node>
   <node concept="1TIwiD" id="Z$zlZaZkvD">
-    <property role="1pbfSe" value="622734008" />
     <property role="TrG5h" value="IndentedText" />
     <property role="3GE5qa" value="vertical" />
     <property role="34LRSv" value="-" />
     <property role="R4oN_" value="Indent Collection" />
+    <property role="EcuMT" value="1145195647825954793" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4w$6EQbaM6c" role="1TKVEl">
       <property role="TrG5h" value="indent" />
+      <property role="IQ2nx" value="5198309202558919052" />
       <ref role="AX2Wp" node="4w$6EQbc7yf" resolve="Indentation" />
     </node>
     <node concept="PrWs8" id="6gwxh6GbQuq" role="PzmwI">
@@ -132,11 +138,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZO7_">
-    <property role="1pbfSe" value="622604476" />
     <property role="TrG5h" value="VerticalLines" />
     <property role="3GE5qa" value="vertical" />
     <property role="34LRSv" value="/" />
     <property role="R4oN_" value="Vertical Collection" />
+    <property role="EcuMT" value="1145195647826084325" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6gwxh6GbRe2" role="PzmwI">
       <ref role="PrY4T" node="6gwxh6GbQu8" resolve="IVerticalGroup" />
@@ -146,8 +152,8 @@
     </node>
   </node>
   <node concept="PlHQZ" id="Z$zlZaZkvE">
-    <property role="1pbfSe" value="622734007" />
     <property role="TrG5h" value="IText" />
+    <property role="EcuMT" value="1145195647825954794" />
     <node concept="PrWs8" id="6gwxh6Gdk9i" role="PrDN$">
       <ref role="PrY4T" node="7g_oPKUKThq" resolve="ILineElement" />
     </node>
@@ -156,18 +162,20 @@
     </node>
   </node>
   <node concept="1TIwiD" id="Z$zlZaZkv$">
-    <property role="1pbfSe" value="622734013" />
     <property role="TrG5h" value="TextgenText" />
     <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="1145195647825954788" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4GbnmmUcW4o" role="1TKVEl">
       <property role="TrG5h" value="ext" />
+      <property role="IQ2nx" value="5407518469085446424" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="Z$zlZaZSbU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1145195647826100986" />
       <ref role="20lvS9" node="Z$zlZaZO7_" resolve="VerticalLines" />
     </node>
     <node concept="PrWs8" id="Z$zlZaZkv_" role="PzmwI">
@@ -175,23 +183,25 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4q7d2VGNiCW">
-    <property role="1pbfSe" value="861167210" />
     <property role="TrG5h" value="NewlineMarker" />
     <property role="3GE5qa" value="horizontal" />
+    <property role="EcuMT" value="5082088080656902716" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="6gwxh6GbQu8">
-    <property role="1pbfSe" value="273673369" />
     <property role="3GE5qa" value="vertical" />
     <property role="TrG5h" value="IVerticalGroup" />
+    <property role="EcuMT" value="7214912913997260680" />
     <node concept="1TJgyi" id="6gwxh6GcoAr" role="1TKVEl">
       <property role="TrG5h" value="align" />
+      <property role="IQ2nx" value="7214912913997400475" />
       <ref role="AX2Wp" node="2jBmyzyFesB" resolve="TextAlignment" />
     </node>
     <node concept="1TJgyj" id="6gwxh6GbQuo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lines" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="7214912913997260696" />
       <ref role="20lvS9" node="Z$zlZaZkvE" resolve="IText" />
     </node>
     <node concept="PrWs8" id="6gwxh6GbQu9" role="PrDN$">
@@ -199,8 +209,8 @@
     </node>
   </node>
   <node concept="PlHQZ" id="4GbnmmUbAAi">
-    <property role="1pbfSe" value="87672567" />
     <property role="TrG5h" value="ITextGenElement" />
+    <property role="EcuMT" value="5407518469085096338" />
   </node>
   <node concept="AxPO7" id="2jBmyzyFesB">
     <property role="3GE5qa" value="vertical" />

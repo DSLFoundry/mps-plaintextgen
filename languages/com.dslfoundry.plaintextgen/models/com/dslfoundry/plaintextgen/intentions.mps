@@ -113,6 +113,10 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -125,10 +129,7 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -563,7 +564,7 @@
                 <ref role="3cqZAo" node="7nnaVmO$fi2" resolve="horz" />
               </node>
               <node concept="3Tsc0h" id="7nnaVmO$OIy" role="2OqNvi">
-                <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
               </node>
             </node>
             <node concept="2Kehj3" id="7nnaVmO$PR9" role="2OqNvi" />
@@ -576,7 +577,7 @@
                 <ref role="3cqZAo" node="7nnaVmO$fi2" resolve="horz" />
               </node>
               <node concept="3Tsc0h" id="7nnaVmO$fL5" role="2OqNvi">
-                <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
               </node>
             </node>
             <node concept="TSZUe" id="7nnaVmO$lh5" role="2OqNvi">
@@ -617,8 +618,8 @@
                   <ref role="3cqZAo" node="7nnaVmO_nG$" resolve="target" />
                 </node>
                 <node concept="1PxgMI" id="7nnaVmO_nGF" role="37vLTx">
-                  <ref role="1PxNhF" to="myiq:Z$zlZaZkvE" resolve="IText" />
-                  <node concept="2Sf5sV" id="7nnaVmO_nGG" role="1PxMeX" />
+                  <ref role="1m5ApE" to="myiq:Z$zlZaZkvE" resolve="IText" />
+                  <node concept="2Sf5sV" id="7nnaVmO_nGG" role="1m5AlR" />
                 </node>
               </node>
             </node>
@@ -665,7 +666,7 @@
                       <ref role="3cqZAo" node="7nnaVmO_nGO" resolve="l" />
                     </node>
                     <node concept="3Tsc0h" id="7nnaVmO_nH2" role="2OqNvi">
-                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
                     </node>
                   </node>
                   <node concept="2Kehj3" id="7nnaVmO_nH3" role="2OqNvi" />
@@ -678,7 +679,7 @@
                       <ref role="3cqZAo" node="7nnaVmO_nGO" resolve="l" />
                     </node>
                     <node concept="3Tsc0h" id="7nnaVmO_nH8" role="2OqNvi">
-                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="7nnaVmO_nH9" role="2OqNvi">
@@ -733,7 +734,7 @@
                 <ref role="3cqZAo" node="7nnaVmO$Sfj" resolve="vert" />
               </node>
               <node concept="3Tsc0h" id="7nnaVmO$Ssn" role="2OqNvi">
-                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" />
+                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
               </node>
             </node>
             <node concept="2Kehj3" id="7nnaVmO$TLe" role="2OqNvi" />
@@ -746,7 +747,7 @@
                 <ref role="3cqZAo" node="7nnaVmO$Sfj" resolve="vert" />
               </node>
               <node concept="3Tsc0h" id="7nnaVmO$UL3" role="2OqNvi">
-                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" />
+                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
               </node>
             </node>
             <node concept="TSZUe" id="7nnaVmO$W5U" role="2OqNvi">
@@ -789,8 +790,8 @@
                   <ref role="3cqZAo" node="7nnaVmO_6Tg" resolve="target" />
                 </node>
                 <node concept="1PxgMI" id="7nnaVmO_edP" role="37vLTx">
-                  <ref role="1PxNhF" to="myiq:Z$zlZaZkvE" resolve="IText" />
-                  <node concept="2Sf5sV" id="7nnaVmO_eb_" role="1PxMeX" />
+                  <ref role="1m5ApE" to="myiq:Z$zlZaZkvE" resolve="IText" />
+                  <node concept="2Sf5sV" id="7nnaVmO_eb_" role="1m5AlR" />
                 </node>
               </node>
             </node>
@@ -837,7 +838,7 @@
                       <ref role="3cqZAo" node="7nnaVmO_7IP" resolve="l" />
                     </node>
                     <node concept="3Tsc0h" id="7nnaVmO_7TX" role="2OqNvi">
-                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
                     </node>
                   </node>
                   <node concept="2Kehj3" id="7nnaVmO_92z" role="2OqNvi" />
@@ -850,7 +851,7 @@
                       <ref role="3cqZAo" node="7nnaVmO_7IP" resolve="l" />
                     </node>
                     <node concept="3Tsc0h" id="7nnaVmO_9PI" role="2OqNvi">
-                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                      <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="7nnaVmO_bNe" role="2OqNvi">
@@ -905,7 +906,7 @@
                 <ref role="3cqZAo" node="7nnaVmO_0tS" resolve="vert" />
               </node>
               <node concept="3Tsc0h" id="7nnaVmO_0u6" role="2OqNvi">
-                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" />
+                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
               </node>
             </node>
             <node concept="2Kehj3" id="7nnaVmO_0u7" role="2OqNvi" />
@@ -918,7 +919,7 @@
                 <ref role="3cqZAo" node="7nnaVmO_0tS" resolve="vert" />
               </node>
               <node concept="3Tsc0h" id="7nnaVmO_0uc" role="2OqNvi">
-                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" />
+                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
               </node>
             </node>
             <node concept="TSZUe" id="7nnaVmO_0ud" role="2OqNvi">

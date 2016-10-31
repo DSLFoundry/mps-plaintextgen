@@ -2,7 +2,7 @@
 <model ref="r:24b3048c-1397-4aa3-93e4-09ca4438cddf(com.dslfoundry.plaintextgen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -279,7 +279,7 @@
       <ref role="34QXea" node="2jBmyzyHOOA" resolve="TextGenElement_Keymap" />
       <node concept="2iRfu4" id="Z$zlZaZp2O" role="2iSdaV" />
       <node concept="3F2HdR" id="Z$zlZaZkvY" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:Z$zlZaZkvM" />
+        <ref role="1NtTu8" to="myiq:Z$zlZaZkvM" resolve="words" />
         <node concept="3vyZuw" id="2jBmyzyEuz0" role="3F10Kt">
           <property role="VOm3f" value="true" />
           <node concept="3nzxsE" id="2jBmyzyEuz6" role="3n$kyP">
@@ -336,7 +336,7 @@
         </node>
         <node concept="35HoNQ" id="2jBmyzyEx5v" role="1QoS34" />
         <node concept="3F1sOY" id="4q7d2VGN$B6" role="1QoVPY">
-          <ref role="1NtTu8" to="myiq:4q7d2VGN$B3" />
+          <ref role="1NtTu8" to="myiq:4q7d2VGN$B3" resolve="newlineMarker" />
         </node>
       </node>
       <node concept="15ARfc" id="4q7d2VGNAl4" role="3F10Kt">
@@ -388,7 +388,7 @@
             <property role="VOm3f" value="false" />
           </node>
           <node concept="3F2HdR" id="4w$6EQbbzgX" role="3EZMnx">
-            <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" />
+            <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" resolve="lines" />
             <node concept="VPXOz" id="4w$6EQbbzgY" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -480,7 +480,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="Z$zlZaZO7S" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" />
+        <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" resolve="lines" />
         <node concept="2iRkQZ" id="Z$zlZaZO7U" role="2czzBx" />
         <node concept="VPXOz" id="2jBmyzyDejI" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -586,7 +586,7 @@
       </node>
       <node concept="3F0ifn" id="Z$zlZaZkPy" role="3EZMnx" />
       <node concept="3F1sOY" id="4w$6EQbd7aG" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:Z$zlZaZSbU" />
+        <ref role="1NtTu8" to="myiq:Z$zlZaZSbU" resolve="content" />
       </node>
       <node concept="2iRkQZ" id="Z$zlZaZkP6" role="2iSdaV" />
     </node>
@@ -840,7 +840,7 @@
       </node>
       <node concept="2iRfu4" id="2jBmyzyH$QQ" role="2iSdaV" />
       <node concept="3F2HdR" id="2jBmyzyH$QR" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:Z$zlZaZkvM" />
+        <ref role="1NtTu8" to="myiq:Z$zlZaZkvM" resolve="words" />
         <node concept="4$FPG" id="2jBmyzyH$R0" role="4_6I_">
           <node concept="3clFbS" id="2jBmyzyH$R1" role="2VODD2">
             <node concept="3cpWs6" id="2jBmyzyH$R2" role="3cqZAp">
@@ -924,7 +924,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="2jBmyzyH_$W" role="3EZMnx">
-          <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" />
+          <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" resolve="lines" />
           <node concept="VPXOz" id="2jBmyzyH_$X" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -1049,7 +1049,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2jBmyzyH_TA" role="3EZMnx">
-        <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" />
+        <ref role="1NtTu8" to="myiq:6gwxh6GbQuo" resolve="lines" />
         <node concept="2iRkQZ" id="2jBmyzyH_TB" role="2czzBx" />
         <node concept="VPXOz" id="2jBmyzyH_TC" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1164,7 +1164,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="2jBmyzyIfcL" role="2OqNvi">
-                  <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" />
+                  <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
                 </node>
               </node>
               <node concept="WFELt" id="2jBmyzyIgC2" role="2OqNvi">
@@ -1218,7 +1218,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="2jBmyzyIwyV" role="2OqNvi">
-                  <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" />
+                  <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
                 </node>
               </node>
               <node concept="WFELt" id="2jBmyzyIlJn" role="2OqNvi">
