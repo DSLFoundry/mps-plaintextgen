@@ -1,9 +1,9 @@
 language: java
 jdk:
 - oraclejdk8
-before_install: wget http://download.jetbrains.com/mps/33/MPS-3.3.5.zip
-install: unzip MPS-3.3.5.zip
-script: ant -Dmps_home=./MPS\ 3.3 clean generate assemble
+before_install: wget http://download.jetbrains.com/mps/34/MPS-3.4.1.zip
+install: unzip MPS-3.4.1.zip
+script: ant -Dmps_home=./MPS\ 3.4 clean generate assemble
 deploy:
   provider: releases
   api_key:
