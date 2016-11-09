@@ -36,7 +36,7 @@
         <version>1.0</version>
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version until-build="144.1" since-build="143.1" />
+        <idea-version until-build="163.1" since-build="162.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
