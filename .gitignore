@@ -1,6 +1,7 @@
 workspace.xml
 junitvmwatcher*.properties
 build.properties
+build/
 
 # generated java classes and java source files
 #   manually add any custom artifacts that can't be generated from the models
