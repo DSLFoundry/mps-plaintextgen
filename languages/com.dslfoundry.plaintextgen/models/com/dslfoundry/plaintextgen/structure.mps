@@ -181,6 +181,9 @@
     <node concept="PrWs8" id="Z$zlZaZkv_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="2XGnAVGRY$Q" role="PzmwI">
+      <ref role="PrY4T" node="2XGnAVGRY$J" resolve="IDefineProtectedRegionDelimiters" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4q7d2VGNiCW">
     <property role="TrG5h" value="NewlineMarker" />
@@ -228,6 +231,38 @@
     <node concept="M4N5e" id="2jBmyzyFesG" role="M5hS2">
       <property role="1uS6qo" value="◨" />
       <property role="1uS6qv" value="right" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2XGnAVGRY$J">
+    <property role="EcuMT" value="3417210047780874543" />
+    <property role="TrG5h" value="IDefineProtectedRegionDelimiters" />
+    <property role="3GE5qa" value="protectedregions" />
+    <node concept="1TJgyi" id="2XGnAVGRY$w" role="1TKVEl">
+      <property role="IQ2nx" value="3417210047780874528" />
+      <property role="TrG5h" value="protectedRegionStartFormat" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2XGnAVGRY$B" role="1TKVEl">
+      <property role="IQ2nx" value="3417210047780874535" />
+      <property role="TrG5h" value="protectedRegionEndFormat" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2XGnAVGSODC">
+    <property role="EcuMT" value="3417210047781096040" />
+    <property role="3GE5qa" value="protectedregions" />
+    <property role="TrG5h" value="ProtectedRegion" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2XGnAVGSODD" role="PzmwI">
+      <ref role="PrY4T" node="2XGnAVGRY$J" resolve="IDefineProtectedRegionDelimiters" />
+    </node>
+    <node concept="PrWs8" id="2XGnAVGSOEa" role="PzmwI">
+      <ref role="PrY4T" node="4GbnmmUbAAi" resolve="ITextGenElement" />
+    </node>
+    <node concept="1TJgyi" id="2XGnAVGSODF" role="1TKVEl">
+      <property role="IQ2nx" value="3417210047781096043" />
+      <property role="TrG5h" value="contextId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

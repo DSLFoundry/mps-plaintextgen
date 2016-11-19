@@ -31,8 +31,11 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -589,6 +592,9 @@
         <ref role="1NtTu8" to="myiq:Z$zlZaZSbU" resolve="content" />
       </node>
       <node concept="2iRkQZ" id="Z$zlZaZkP6" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="2XGnAVGRY_h" role="6VMZX">
+      <ref role="PMmxG" node="2XGnAVGRY$U" resolve="IProtectedRegionDelimiter" />
     </node>
   </node>
   <node concept="24kQdi" id="4q7d2VGNzUl">
@@ -1246,6 +1252,60 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2XGnAVGRY$U">
+    <property role="TrG5h" value="IProtectedRegionDelimiter" />
+    <property role="3GE5qa" value="protectedregions" />
+    <ref role="1XX52x" to="myiq:2XGnAVGRY$J" resolve="IDefineProtectedRegionDelimiters" />
+    <node concept="3EZMnI" id="2XGnAVGRY$W" role="2wV5jI">
+      <node concept="3F0ifn" id="2XGnAVGRYxU" role="3EZMnx">
+        <property role="3F0ifm" value="Protected regions:" />
+      </node>
+      <node concept="3F0ifn" id="2XGnAVGRYy$" role="3EZMnx">
+        <property role="3F0ifm" value="Start:" />
+        <node concept="pVoyu" id="2XGnAVGRYyL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2XGnAVGRYyO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2XGnAVGRY_J" role="3EZMnx">
+        <property role="1$x2rV" value="// PROTECTED REGION START %s" />
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="myiq:2XGnAVGRY$w" resolve="protectedRegionStartFormat" />
+      </node>
+      <node concept="3F0ifn" id="2XGnAVGRYyG" role="3EZMnx">
+        <property role="3F0ifm" value="End  :" />
+        <node concept="pVoyu" id="2XGnAVGRYyT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2XGnAVGRYyW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2XGnAVGRY_U" role="3EZMnx">
+        <property role="1$x2rV" value="// PROTECTED REGION END %s" />
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="myiq:2XGnAVGRY$B" resolve="protectedRegionEndFormat" />
+      </node>
+      <node concept="l2Vlx" id="2XGnAVGRY$Z" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2XGnAVGSODP">
+    <property role="3GE5qa" value="protectedregions" />
+    <ref role="1XX52x" to="myiq:2XGnAVGSODC" resolve="ProtectedRegion" />
+    <node concept="3EZMnI" id="2XGnAVGSODU" role="2wV5jI">
+      <node concept="l2Vlx" id="2XGnAVGSODV" role="2iSdaV" />
+      <node concept="3F0ifn" id="2XGnAVGSODR" role="3EZMnx">
+        <property role="3F0ifm" value="protected region" />
+      </node>
+      <node concept="3F0A7n" id="2XGnAVGSOE3" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="no macro context" />
+        <ref role="1NtTu8" to="myiq:2XGnAVGSODF" resolve="contextId" />
       </node>
     </node>
   </node>
