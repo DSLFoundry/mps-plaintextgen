@@ -13,7 +13,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -194,9 +194,6 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -1750,17 +1747,10 @@
                 <node concept="Xl_RD" id="2XGnAVGU6Cx" role="37wK5m">
                   <property role="Xl_RC" value="%s.%s" />
                 </node>
-                <node concept="2OqwBi" id="2XGnAVGU76D" role="37wK5m">
-                  <node concept="2OqwBi" id="2XGnAVGU76E" role="2Oq$k0">
-                    <node concept="2JrnkZ" id="2XGnAVGU76F" role="2Oq$k0">
-                      <node concept="13iPFW" id="2XGnAVGU76G" role="2JrQYb" />
-                    </node>
-                    <node concept="liA8E" id="2XGnAVGU76H" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="2XGnAVGU76I" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                <node concept="2OqwBi" id="2XGnAVH8FQm" role="37wK5m">
+                  <node concept="13iPFW" id="2XGnAVH8F_p" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2XGnAVH8G9u" role="2OqNvi">
+                    <ref role="3TsBF5" to="myiq:2XGnAVH69$L" resolve="regionId" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="2XGnAVGU7zb" role="37wK5m">
@@ -1770,17 +1760,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="2XGnAVGU61y" role="3K4E3e">
-                <node concept="2OqwBi" id="2XGnAVGU5dj" role="2Oq$k0">
-                  <node concept="2JrnkZ" id="2XGnAVGU50u" role="2Oq$k0">
-                    <node concept="13iPFW" id="2XGnAVGU41T" role="2JrQYb" />
-                  </node>
-                  <node concept="liA8E" id="2XGnAVGU5q2" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="2XGnAVGU6jV" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <node concept="2OqwBi" id="2XGnAVH8Rw$" role="3K4E3e">
+                <node concept="13iPFW" id="2XGnAVGU41T" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2XGnAVH8RV5" role="2OqNvi">
+                  <ref role="3TsBF5" to="myiq:2XGnAVH69$L" resolve="regionId" />
                 </node>
               </node>
             </node>
@@ -1835,7 +1818,27 @@
       </node>
     </node>
     <node concept="13hLZK" id="2XGnAVGSOEf" role="13h7CW">
-      <node concept="3clFbS" id="2XGnAVGSOEg" role="2VODD2" />
+      <node concept="3clFbS" id="2XGnAVGSOEg" role="2VODD2">
+        <node concept="3clFbF" id="2XGnAVH7lcr" role="3cqZAp">
+          <node concept="37vLTI" id="2XGnAVH7mVj" role="3clFbG">
+            <node concept="2OqwBi" id="2XGnAVH7nwu" role="37vLTx">
+              <node concept="2YIFZM" id="2XGnAVH7nfG" role="2Oq$k0">
+                <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+              </node>
+              <node concept="liA8E" id="2XGnAVH7o3g" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2XGnAVH7m4K" role="37vLTJ">
+              <node concept="13iPFW" id="2XGnAVH7lcq" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2XGnAVH7mx0" role="2OqNvi">
+                <ref role="3TsBF5" to="myiq:2XGnAVH69$L" resolve="regionId" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="2XGnAVGTCze" role="13h7CS">
       <property role="13i0iv" value="false" />
