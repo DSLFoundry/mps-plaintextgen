@@ -19,9 +19,15 @@
         <child id="5316143009141253518" name="testSubConcepts" index="3qNdTC" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
   <node concept="1Z0M84" id="3bf11hdN4Rh">
     <property role="1Z0M85" value="TestValue" />
+    <property role="TrG5h" value="foo" />
     <node concept="3qNdTw" id="4B6IYqj2Aug" role="3qNdTC">
       <property role="3qNdTx" value="TestValue2" />
       <node concept="3qNdTJ" id="4B6IYqj2Auh" role="3qNdTE">

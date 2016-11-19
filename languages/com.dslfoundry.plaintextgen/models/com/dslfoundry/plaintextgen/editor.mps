@@ -593,8 +593,20 @@
       </node>
       <node concept="2iRkQZ" id="Z$zlZaZkP6" role="2iSdaV" />
     </node>
-    <node concept="PMmxH" id="2XGnAVGRY_h" role="6VMZX">
-      <ref role="PMmxG" node="2XGnAVGRY$U" resolve="IProtectedRegionDelimiter" />
+    <node concept="3EZMnI" id="5Ha$mJRJxiv" role="6VMZX">
+      <node concept="3F0ifn" id="5Ha$mJRKSOs" role="3EZMnx">
+        <property role="3F0ifm" value="Output path:" />
+      </node>
+      <node concept="3F0A7n" id="5Ha$mJRKSOA" role="3EZMnx">
+        <ref role="1NtTu8" to="myiq:5Ha$mJRHnue" resolve="path" />
+      </node>
+      <node concept="PMmxH" id="2XGnAVGRY_h" role="3EZMnx">
+        <ref role="PMmxG" node="2XGnAVGRY$U" resolve="IProtectedRegionDelimiter" />
+        <node concept="pVoyu" id="5Ha$mJRKSOq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5Ha$mJRJxiw" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4q7d2VGNzUl">
@@ -1306,6 +1318,9 @@
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="no macro context" />
         <ref role="1NtTu8" to="myiq:2XGnAVGSODF" resolve="contextId" />
+      </node>
+      <node concept="VPXOz" id="5Ha$mJRJjoh" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
