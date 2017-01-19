@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$APPLICATION_HOME_DIR$/plugins/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.jar!/META-INF/module.xml" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ExampleNestedList/ExampleNestedList.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/TestLanguage/TestLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.mpl" folder="" />
