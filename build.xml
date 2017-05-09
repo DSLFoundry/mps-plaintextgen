@@ -26,53 +26,6 @@
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build/META-INF" />
-    <echoxml file="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build/META-INF/plugin.xml">
-      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>com.dslfoundry.plaintextgen.build</id>
-        <name>com.dslfoundry.plaintextgen.build</name>
-        <description>Alternative Textgen for JetBrains MPS using regular reduction rules</description>
-        <version>1.01</version>
-        <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
-        <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.build</depends>
-        <idea-version until-build="163.1" since-build="162.1" />
-        
-        <extensions defaultExtensionNs="com.intellij">
-          <mps.LanguageLibrary dir="/languages" />
-        </extensions>
-      </idea-plugin>
-    </echoxml>
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build/languages" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build/languages/com.dslfoundry.plaintextgen.build" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar/META-INF/module.xml">
-      <module namespace="com.dslfoundry.plaintextgen.build" type="solution" uuid="908e5ed8-84c5-4bbe-a0a9-e0a7c2495a5a">
-        <dependencies />
-        <sources jar="com.dslfoundry.plaintextgen.build-src.jar" descriptor="com.dslfoundry.plaintextgen.build.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build/languages/com.dslfoundry.plaintextgen.build/com.dslfoundry.plaintextgen.build.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextgen.build" />
-      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.plaintextgen.build-models">
-      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen.build/languages/com.dslfoundry.plaintextgen.build/com.dslfoundry.plaintextgen.build-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/solutions/com.dslfoundry.plaintextgen.build/com.dslfoundry.plaintextgen.build.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.plaintextgen.build-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/META-INF" />
     <echoxml file="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/META-INF/plugin.xml">
@@ -83,6 +36,7 @@
         <version>1.01</version>
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.build</depends>
         <idea-version until-build="163.1" since-build="162.1" />
         
         <extensions defaultExtensionNs="com.intellij">
@@ -149,6 +103,33 @@
       <zipfileset file="${basedir}/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.dslfoundry.plaintextgen-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.dslfoundry.plaintextgen-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar/META-INF/module.xml">
+      <module namespace="com.dslfoundry.plaintextgen.build" type="solution" uuid="908e5ed8-84c5-4bbe-a0a9-e0a7c2495a5a">
+        <dependencies />
+        <sources jar="com.dslfoundry.plaintextgen.build-src.jar" descriptor="com.dslfoundry.plaintextgen.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextgen.build" />
+      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextgen.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.plaintextgen.build-models">
+      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.dslfoundry.plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.build-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/com.dslfoundry.plaintextgen.build/com.dslfoundry.plaintextgen.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.plaintextgen.build-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/com.dslfoundry.plaintextgen.zip">
       <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextgen.zip" />
@@ -259,6 +240,7 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <chunk>
@@ -383,7 +365,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.dslfoundry.plaintextgen.build">
+  <target name="java.compile.com.dslfoundry.plaintextgen.build" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.dslfoundry.plaintextgen.build" />
     <javac destdir="${build.tmp}/java/out/com.dslfoundry.plaintextgen.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -391,7 +373,9 @@
       <src>
         <path location="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.dslfoundry.plaintextgen.build">
       <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" excludes="**/*.java" />
