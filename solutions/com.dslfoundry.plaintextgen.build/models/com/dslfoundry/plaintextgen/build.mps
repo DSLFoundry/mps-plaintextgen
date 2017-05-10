@@ -4,6 +4,8 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -107,6 +109,7 @@
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -163,6 +166,9 @@
       </node>
       <node concept="m$_yC" id="2NTGYE$JTHc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="5rkDY7YkDQH" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="3_J27D" id="2NTGYE$JTHd" role="m_cZH">
         <node concept="3Mxwew" id="2NTGYE$JTHe" role="3MwsjC">
@@ -245,6 +251,35 @@
           <node concept="3bR9La" id="4GbnmmUeWl_" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="5rkDY7YkAIz" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.dslfoundry.plaintextgen.build" />
+        <property role="3LESm3" value="908e5ed8-84c5-4bbe-a0a9-e0a7c2495a5a" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="5rkDY7YkAIA" role="3LF7KH">
+          <node concept="2Ry0Ak" id="5rkDY7YkAJn" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="5rkDY7YkAJI" role="2Ry0An">
+              <property role="2Ry0Am" value="com.dslfoundry.plaintextgen.build" />
+              <node concept="2Ry0Ak" id="5rkDY7YkAK5" role="2Ry0An">
+                <property role="2Ry0Am" value="com.dslfoundry.plaintextgen.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5rkDY7YkAKg" role="3bR37C">
+          <node concept="3bR9La" id="5rkDY7YkAKh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="69iPmlk$VE1" role="3bR37C">
+          <node concept="3bR9La" id="69iPmlk$VE2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1WGJoq9Wd0d" resolve="jetbrains.mps.build.workflow.preset" />
           </node>
         </node>
       </node>
