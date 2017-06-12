@@ -745,7 +745,7 @@
       <node concept="3clFbS" id="7nnaVmO$eN2" role="2VODD2">
         <node concept="3cpWs6" id="7nnaVmO$fao" role="3cqZAp">
           <node concept="Xl_RD" id="7nnaVmO$faq" role="3cqZAk">
-            <property role="Xl_RC" value="Surround with horrizontal collection" />
+            <property role="Xl_RC" value="Surround with Horizontal Collection" />
           </node>
         </node>
       </node>
@@ -815,7 +815,7 @@
       <node concept="3clFbS" id="7nnaVmO$S9n" role="2VODD2">
         <node concept="3cpWs6" id="7nnaVmO$SaH" role="3cqZAp">
           <node concept="Xl_RD" id="7nnaVmO$SbU" role="3cqZAk">
-            <property role="Xl_RC" value="Surround with vertical collection" />
+            <property role="Xl_RC" value="Surround with Vertical Collection" />
           </node>
         </node>
       </node>
@@ -989,7 +989,7 @@
       <node concept="3clFbS" id="7nnaVmO_0mL" role="2VODD2">
         <node concept="3cpWs6" id="7nnaVmO_0o9" role="3cqZAp">
           <node concept="Xl_RD" id="7nnaVmO_0pt" role="3cqZAk">
-            <property role="Xl_RC" value="Surround with indent collection" />
+            <property role="Xl_RC" value="Surround with Indent Collection" />
           </node>
         </node>
       </node>
