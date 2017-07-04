@@ -12,6 +12,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -24,6 +25,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -70,6 +72,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1397,6 +1400,39 @@
     </node>
     <node concept="13hLZK" id="4GbnmmUbAGW" role="13h7CW">
       <node concept="3clFbS" id="4GbnmmUbAGX" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4GTHgMfG_eG">
+    <ref role="13h7C2" to="myiq:Z$zlZaZkv$" resolve="TextgenText" />
+    <node concept="13hLZK" id="4GTHgMfG_eH" role="13h7CW">
+      <node concept="3clFbS" id="4GTHgMfG_eI" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4GTHgMfG_eR" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="4GTHgMfG_g0" role="1B3o_S" />
+      <node concept="3clFbS" id="4GTHgMfG_m0" role="3clF47">
+        <node concept="3cpWs6" id="4GTHgMfG_xP" role="3cqZAp">
+          <node concept="3cpWs3" id="4GTHgMfGAxG" role="3cqZAk">
+            <node concept="2OqwBi" id="4GTHgMfGAHL" role="3uHU7w">
+              <node concept="13iPFW" id="4GTHgMfGAxR" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4GTHgMfGAPe" role="2OqNvi">
+                <ref role="3TsBF5" to="myiq:4GbnmmUcW4o" resolve="ext" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4GTHgMfGA0k" role="3uHU7B">
+              <node concept="13iPFW" id="4GTHgMfG_QU" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4GTHgMfGA7B" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4GTHgMfG_m1" role="3clF45" />
     </node>
   </node>
 </model>
