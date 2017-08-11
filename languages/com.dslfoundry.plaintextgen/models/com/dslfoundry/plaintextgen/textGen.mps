@@ -2,8 +2,7 @@
 <model ref="r:4752c29d-6163-4693-b1d7-3c8befc060cd(com.dslfoundry.plaintextgen.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="k44w" ref="r:359669ec-8146-4c97-9e8a-7f7baa158ff0(com.dslfoundry.plaintextgen.plugin)" />
@@ -148,7 +147,7 @@
             <node concept="2OqwBi" id="4GbnmmUerm8" role="2Oq$k0">
               <node concept="117lpO" id="4GbnmmUerfm" role="2Oq$k0" />
               <node concept="3TrEf2" id="4GbnmmUerqv" role="2OqNvi">
-                <ref role="3Tt5mk" to="myiq:Z$zlZaZSbU" />
+                <ref role="3Tt5mk" to="myiq:Z$zlZaZSbU" resolve="content" />
               </node>
             </node>
             <node concept="2qgKlT" id="4GbnmmUerfn" role="2OqNvi">
