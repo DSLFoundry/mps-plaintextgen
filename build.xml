@@ -33,11 +33,11 @@
         <id>com.dslfoundry.plaintextgen</id>
         <name>com.dslfoundry.plaintextgen</name>
         <description>Alternative Textgen for JetBrains MPS using regular reduction rules</description>
-        <version>2017.2.2</version>
+        <version>2017.3</version>
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version until-build="173.1" since-build="172.1" />
+        <idea-version until-build="174.1" since-build="173.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
