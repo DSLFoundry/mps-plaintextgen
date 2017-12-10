@@ -1,7 +1,7 @@
 language: java
 jdk:
 - oraclejdk8
-before_install: wget https://download-cf.jetbrains.com/mps/2017.2/MPS-2017.3.zip
+before_install: wget https://download-cf.jetbrains.com/mps/2017.3/MPS-2017.3.zip
 install: unzip MPS-2017.3.zip
 script: ant -Dmps_home=./MPS\ 2017.3 clean generate assemble
 before_deploy: mv build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.zip build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-MPS-2017.3.zip
