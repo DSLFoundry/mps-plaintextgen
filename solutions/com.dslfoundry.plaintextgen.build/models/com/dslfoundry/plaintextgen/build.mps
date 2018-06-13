@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
   </languages>
@@ -41,10 +41,6 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
-      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
-        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
-      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
@@ -149,15 +145,8 @@
       </node>
     </node>
     <node concept="1l3spV" id="2NTGYE$JTHf" role="1l3spN">
-      <node concept="3981dG" id="2NTGYE$JTHg" role="39821P">
-        <node concept="3_J27D" id="2NTGYE$JTHh" role="Nbhlr">
-          <node concept="3Mxwew" id="2NTGYE$JTHi" role="3MwsjC">
-            <property role="3MwjfP" value="com.dslfoundry.plaintextgen.zip" />
-          </node>
-        </node>
-        <node concept="m$_wl" id="2NTGYE$JTHj" role="39821P">
-          <ref role="m_rDy" node="2NTGYE$JTH6" resolve="com.dslfoundry.plaintextgen" />
-        </node>
+      <node concept="m$_wl" id="2NTGYE$JTHj" role="39821P">
+        <ref role="m_rDy" node="2NTGYE$JTH6" resolve="com.dslfoundry.plaintextgen" />
       </node>
     </node>
     <node concept="m$_wf" id="2NTGYE$JTH6" role="3989C9">
