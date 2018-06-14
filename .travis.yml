@@ -4,7 +4,7 @@ jdk:
 before_install: wget https://download-cf.jetbrains.com/mps/2018.1/MPS-2018.1.zip
 install: unzip MPS-2018.1.zip
 script: ant -Dmps_home=./MPS\ 2018.1 clean generate assemble
-before_deploy: mv build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.zip build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-MPS-2018.1.zip
+before_deploy: zip build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-MPS-2018.1.zip build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen
 deploy:
   provider: releases
   api_key:
