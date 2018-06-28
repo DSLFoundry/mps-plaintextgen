@@ -4,12 +4,12 @@ jdk:
 before_install: wget https://download-cf.jetbrains.com/mps/2018.1/MPS-2018.1.zip
 install: unzip MPS-2018.1.zip
 script: ant -Dmps_home=./MPS\ 2018.1 clean generate assemble
-before_deploy: zip -r com.dslfoundry.plaintextgen-MPS-2018.1.zip build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen
+before_deploy: cd build/artifacts/com.dslfoundry.plaintextgen; zip -r com.dslfoundry.plaintextgen-MPS-2018.1.zip com.dslfoundry.plaintextgen
 deploy:
   provider: releases
   api_key:
     secure: rKm0sEmLJNgG7gRmCiLIH4poLt8ozTuwL5j+a6ZTPWprONDqwlEMD8iWa+6XBmIzWd5196uq+qi1RqvI8OGkux4oyOMrcZw5HQvbMOulCMmr7rybMeQ0CuHxj90gaPxrmeudh/cgA2tBTxmnQOPuE1SaBO3q3odDWg7Xt0Y+9OKakez0pZg70W89pXyHc111ufoCYpC0Q3mibVbICy+mO2r8EASFUaOmk/JaitCQI/EW/oSV5k7A/ZhTMtu7jaqdmeo+fbsOBmIN2riL1Ijn65QdZVuJxIHPLAXwf7WR5a98g6IWAZtuP8u4OTNWts6Zi0UMkYJ+n9k777Vbw+yW1GQJRor4DuExwW4az8Fh+nSv/bHCdHVFKIM3T98gtDlhHrG8Vnj4wLsg8KS5Y0YglzFJrHmVEDdARKDGvaU54QUNplWNMqvrabGFVAK+7Mp6yb09LwyDa9sto6PrP3gN75i6CjJ6rW6NHDjJ6+ISNMKcfjtBQYOawoBpY2x5h19aIqg1MrfUUdEC01k9+aYDqmYIAZmGLpt+/7t7lxNcYuD6PPxpB3geLAemi4xw8nEcWfDzJGRUduH58GT1vwsCK2bM3vBBKF+iWOhAT/LlYAf2APwuEu9HhHeBCRWFRLFJ4iyDes0npnb4SSV44gFpItRks96rFXadTfjLCJedAII=
-  file: "com.dslfoundry.plaintextgen-MPS-2018.1.zip"
+  file: "build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-MPS-2018.1.zip"
   skip_cleanup: true
   on:
     repo: DSLFoundry/mps-plaintextgen
