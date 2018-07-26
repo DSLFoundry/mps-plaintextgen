@@ -2,7 +2,7 @@
 <model ref="r:5b8a786e-0840-4a56-bc10-3a0fa78d84c2(com.dslfoundry.plaintextgen.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,11 +25,11 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -55,22 +55,22 @@
   <node concept="1M2fIO" id="5Ha$mJRJW57">
     <property role="3GE5qa" value="protectedregions" />
     <ref role="1M2myG" to="myiq:2XGnAVGSODC" resolve="ProtectedRegion" />
-    <node concept="nKS2y" id="5Ha$mJRJW58" role="1MLUbF">
-      <node concept="3clFbS" id="5Ha$mJRJW59" role="2VODD2">
-        <node concept="3clFbF" id="5Ha$mJRJWci" role="3cqZAp">
-          <node concept="2OqwBi" id="5Ha$mJRJXqc" role="3clFbG">
-            <node concept="2OqwBi" id="5Ha$mJRJWnH" role="2Oq$k0">
-              <node concept="nLn13" id="5Ha$mJRJWch" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="5Ha$mJRJWz$" role="2OqNvi">
-                <node concept="1xMEDy" id="5Ha$mJRJWzA" role="1xVPHs">
-                  <node concept="chp4Y" id="5Ha$mJRJWGA" role="ri$Ld">
+    <node concept="9S07l" id="5Ha$mJRJW58" role="9Vyp8">
+      <node concept="3clFbS" id="7g6Wn22f1$9" role="2VODD2">
+        <node concept="3clFbF" id="7g6Wn22f1$a" role="3cqZAp">
+          <node concept="2OqwBi" id="7g6Wn22f1$b" role="3clFbG">
+            <node concept="2OqwBi" id="7g6Wn22f1$c" role="2Oq$k0">
+              <node concept="nLn13" id="7g6Wn22f1$d" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7g6Wn22f1$e" role="2OqNvi">
+                <node concept="1xMEDy" id="7g6Wn22f1$f" role="1xVPHs">
+                  <node concept="chp4Y" id="7g6Wn22f1$g" role="ri$Ld">
                     <ref role="cht4Q" to="myiq:Z$zlZaZkv$" resolve="TextgenText" />
                   </node>
                 </node>
-                <node concept="1xIGOp" id="5Ha$mJRJX8H" role="1xVPHs" />
+                <node concept="1xIGOp" id="7g6Wn22f1$h" role="1xVPHs" />
               </node>
             </node>
-            <node concept="3x8VRR" id="5Ha$mJRJXEy" role="2OqNvi" />
+            <node concept="3x8VRR" id="7g6Wn22f1$i" role="2OqNvi" />
           </node>
         </node>
       </node>

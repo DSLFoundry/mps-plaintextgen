@@ -114,8 +114,8 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -618,8 +618,10 @@
                   <ref role="3cqZAo" node="7nnaVmO_nG$" resolve="target" />
                 </node>
                 <node concept="1PxgMI" id="7nnaVmO_nGF" role="37vLTx">
-                  <ref role="1m5ApE" to="myiq:Z$zlZaZkvE" resolve="IText" />
                   <node concept="2Sf5sV" id="7nnaVmO_nGG" role="1m5AlR" />
+                  <node concept="chp4Y" id="7g6Wn22f1LH" role="3oSUPX">
+                    <ref role="cht4Q" to="myiq:Z$zlZaZkvE" resolve="IText" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -790,8 +792,10 @@
                   <ref role="3cqZAo" node="7nnaVmO_6Tg" resolve="target" />
                 </node>
                 <node concept="1PxgMI" id="7nnaVmO_edP" role="37vLTx">
-                  <ref role="1m5ApE" to="myiq:Z$zlZaZkvE" resolve="IText" />
                   <node concept="2Sf5sV" id="7nnaVmO_eb_" role="1m5AlR" />
+                  <node concept="chp4Y" id="7g6Wn22f1LJ" role="3oSUPX">
+                    <ref role="cht4Q" to="myiq:Z$zlZaZkvE" resolve="IText" />
+                  </node>
                 </node>
               </node>
             </node>

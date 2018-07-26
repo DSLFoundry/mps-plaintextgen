@@ -237,10 +237,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -923,7 +926,6 @@
                           </node>
                           <node concept="2OqwBi" id="3bf11hdNqfx" role="37vLTJ">
                             <node concept="1PxgMI" id="3bf11hdNqav" role="2Oq$k0">
-                              <ref role="1m5ApE" to="myiq:Z$zlZaZkvO" resolve="word" />
                               <node concept="1y4W85" id="3bf11hdNpZh" role="1m5AlR">
                                 <node concept="3cmrfG" id="3bf11hdNq1e" role="1y58nS">
                                   <property role="3cmrfH" value="0" />
@@ -936,6 +938,9 @@
                                     <ref role="3TtcxE" to="myiq:Z$zlZaZkvM" resolve="words" />
                                   </node>
                                 </node>
+                              </node>
+                              <node concept="chp4Y" id="7g6Wn22f1LI" role="3oSUPX">
+                                <ref role="cht4Q" to="myiq:Z$zlZaZkvO" resolve="word" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="3bf11hdNqs5" role="2OqNvi">
@@ -1159,9 +1164,11 @@
                                   </node>
                                   <node concept="2OqwBi" id="2jBmyzyIPhM" role="37vLTJ">
                                     <node concept="1PxgMI" id="2jBmyzyIPdU" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="myiq:Z$zlZaZkvD" resolve="IndentedText" />
                                       <node concept="37vLTw" id="2jBmyzyIOVS" role="1m5AlR">
                                         <ref role="3cqZAo" node="2jBmyzyIDFz" resolve="last_container" />
+                                      </node>
+                                      <node concept="chp4Y" id="7g6Wn22f1LG" role="3oSUPX">
+                                        <ref role="cht4Q" to="myiq:Z$zlZaZkvD" resolve="IndentedText" />
                                       </node>
                                     </node>
                                     <node concept="3TrcHB" id="2jBmyzyIPqF" role="2OqNvi">
