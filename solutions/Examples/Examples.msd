@@ -7,8 +7,8 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="a50fc719-4261-4a46-8e65-d98071469ff6" fqName="ExampleNestedList" version="-1" />
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language slang="l:a50fc719-4261-4a46-8e65-d98071469ff6:ExampleNestedList" version="-1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="ba03a5e3-c9b5-466f-83a9-e2775cc47038(Examples)" version="0" />

@@ -7,9 +7,9 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" fqName="TestLanguage" version="0" />
-    <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" fqName="com.dslfoundry.plaintextgen" version="0" />
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language slang="l:90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2:TestLanguage" version="0" />
+    <language slang="l:990507d3-3527-4c54-bfe9-0ca3c9c6247a:com.dslfoundry.plaintextgen" version="0" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="656d5e8d-33ef-4f6c-b197-7fbc05468208(TestSolution)" version="0" />
