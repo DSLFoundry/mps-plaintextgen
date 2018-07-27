@@ -1,8 +1,8 @@
 language: java
 jdk:
 - oraclejdk8
-before_install: wget http://download.jetbrains.com/mps/34/MPS-3.4.1.zip
-install: unzip MPS-3.4.1.zip
+before_install: wget http://download.jetbrains.com/mps/34/MPS-3.4.4.zip
+install: unzip MPS-3.4.4.zip
 script: ant -Dmps_home=./MPS\ 3.4 clean generate assemble
 before_deploy: mv build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.zip build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-mps34.zip
 deploy:
