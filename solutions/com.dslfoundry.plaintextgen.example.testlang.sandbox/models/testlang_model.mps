@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f5f58d8c-430b-4024-94ad-5a07145531f9(TestSolution.TestModel)">
+<model ref="r:f5f58d8c-430b-4024-94ad-5a07145531f9(com.dslfoundry.plaintextgen.example.testlang.sandbox.testlang_model)">
   <persistence version="9" />
   <languages>
-    <use id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" name="TestLanguage" version="0" />
+    <use id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" name="com.dslfoundry.plaintextgen.example.testlang" version="0" />
   </languages>
   <imports />
   <registry>
-    <language id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" name="TestLanguage">
-      <concept id="5316143009141253510" name="TestLanguage.structure.TestSubConcept" flags="ng" index="3qNdTw">
+    <language id="90aa1f1b-f65c-4e9a-99b4-4030e09d0bb2" name="com.dslfoundry.plaintextgen.example.testlang">
+      <concept id="5316143009141253510" name="com.dslfoundry.plaintextgen.example.testlang.structure.TestSubConcept" flags="ng" index="3qNdTw">
         <property id="5316143009141253511" name="testProperty" index="3qNdTx" />
         <child id="5316143009141253516" name="testSubSubConcepts" index="3qNdTE" />
       </concept>
-      <concept id="5316143009141253513" name="TestLanguage.structure.TestSubSubConcept" flags="ng" index="3qNdTJ">
+      <concept id="5316143009141253513" name="com.dslfoundry.plaintextgen.example.testlang.structure.TestSubSubConcept" flags="ng" index="3qNdTJ">
         <property id="5316143009141253514" name="testProperty" index="3qNdTG" />
       </concept>
-      <concept id="3661149507326584336" name="TestLanguage.structure.TestConcept" flags="ng" index="1Z0M84">
+      <concept id="3661149507326584336" name="com.dslfoundry.plaintextgen.example.testlang.structure.TestConcept" flags="ng" index="1Z0M84">
         <property id="3661149507326584337" name="testProperty" index="1Z0M85" />
         <child id="5316143009141253518" name="testSubConcepts" index="3qNdTC" />
       </concept>

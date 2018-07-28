@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dc3e6e68-c774-447f-b067-829c37c99a29(TestSolution.Tests)">
+<model ref="r:dc3e6e68-c774-447f-b067-829c37c99a29(plaintextgen_model)">
   <persistence version="9" />
   <languages>
     <use id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen" version="0" />

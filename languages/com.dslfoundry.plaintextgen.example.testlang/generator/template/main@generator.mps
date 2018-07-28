@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:04a2b58c-69ac-4637-994b-5f138ad88810(TestLanguage.generator.template.main@generator)">
+<model ref="r:04a2b58c-69ac-4637-994b-5f138ad88810(com.dslfoundry.plaintextgen.example.testlang.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
@@ -10,7 +10,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="b7rd" ref="r:e4a8ca6a-7b45-453e-94e2-7138dbc8da65(TestLanguage.structure)" implicit="true" />
+    <import index="b7rd" ref="r:e4a8ca6a-7b45-453e-94e2-7138dbc8da65(com.dslfoundry.plaintextgen.example.testlang.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -316,7 +316,7 @@
                 <node concept="3clFbF" id="4B6IYqj2Bk7" role="3cqZAp">
                   <node concept="2OqwBi" id="4B6IYqj2Bk2" role="3clFbG">
                     <node concept="3Tsc0h" id="4B6IYqj2Bk5" role="2OqNvi">
-                      <ref role="3TtcxE" to="b7rd:4B6IYqj2Amc" />
+                      <ref role="3TtcxE" to="b7rd:4B6IYqj2Amc" resolve="testSubSubConcepts" />
                     </node>
                     <node concept="30H73N" id="4B6IYqj2Bk6" role="2Oq$k0" />
                   </node>
@@ -331,7 +331,7 @@
               <node concept="3clFbF" id="4B6IYqj2AYu" role="3cqZAp">
                 <node concept="2OqwBi" id="4B6IYqj2AYp" role="3clFbG">
                   <node concept="3Tsc0h" id="4B6IYqj2AYs" role="2OqNvi">
-                    <ref role="3TtcxE" to="b7rd:4B6IYqj2Ame" />
+                    <ref role="3TtcxE" to="b7rd:4B6IYqj2Ame" resolve="testSubConcepts" />
                   </node>
                   <node concept="30H73N" id="4B6IYqj2AYt" role="2Oq$k0" />
                 </node>
