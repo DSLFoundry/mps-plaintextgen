@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:479e99c8-287b-4479-bad2-199ba5ad2cfb(ExampleNestedList.generator.template.main@generator)">
+<model ref="r:479e99c8-287b-4479-bad2-199ba5ad2cfb(com.dslfoundry.plaintextgen.example.nestedlist.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
@@ -10,7 +10,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="t6jl" ref="r:4349a1cb-29cc-408f-a04d-ee612c456844(ExampleNestedList.structure)" implicit="true" />
+    <import index="t6jl" ref="r:4349a1cb-29cc-408f-a04d-ee612c456844(com.dslfoundry.plaintextgen.example.nestedlist.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -219,7 +219,7 @@
                     <node concept="3clFbF" id="3OQCuKRw6XD" role="3cqZAp">
                       <node concept="2OqwBi" id="3OQCuKRw6X$" role="3clFbG">
                         <node concept="3Tsc0h" id="3OQCuKRw6XB" role="2OqNvi">
-                          <ref role="3TtcxE" to="t6jl:65PHFmamJEY" />
+                          <ref role="3TtcxE" to="t6jl:65PHFmamJEY" resolve="branches" />
                         </node>
                         <node concept="30H73N" id="3OQCuKRw6XC" role="2Oq$k0" />
                       </node>
@@ -382,7 +382,7 @@
               <node concept="3clFbF" id="3OQCuKRw21d" role="3cqZAp">
                 <node concept="2OqwBi" id="3OQCuKRw218" role="3clFbG">
                   <node concept="3Tsc0h" id="3OQCuKRw21b" role="2OqNvi">
-                    <ref role="3TtcxE" to="t6jl:65PHFmamJES" />
+                    <ref role="3TtcxE" to="t6jl:65PHFmamJES" resolve="trunk" />
                   </node>
                   <node concept="30H73N" id="3OQCuKRw21c" role="2Oq$k0" />
                 </node>
@@ -446,7 +446,7 @@
                                 <ref role="3cqZAo" node="3OQCuKRwBoO" resolve="it" />
                               </node>
                               <node concept="3Tsc0h" id="3OQCuKRwBGL" role="2OqNvi">
-                                <ref role="3TtcxE" to="t6jl:65PHFmamJEY" />
+                                <ref role="3TtcxE" to="t6jl:65PHFmamJEY" resolve="branches" />
                               </node>
                             </node>
                             <node concept="1v1jN8" id="3OQCuKRwDZM" role="2OqNvi" />

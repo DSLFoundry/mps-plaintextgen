@@ -2,11 +2,11 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/ExampleNestedList/ExampleNestedList.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.plaintextgen.example.nestedlist/com.dslfoundry.plaintextgen.example.nestedlist.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.plaintextgen.example.testlang/com.dslfoundry.plaintextgen.example.testlang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Examples/Examples.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.plaintextgen.build/com.dslfoundry.plaintextgen.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.plaintextgen.example.nestedlist.sandbox/com.dslfoundry.plaintextgen.example.nestedlist.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.plaintextgen.example.testlang.sandbox/com.dslfoundry.plaintextgen.example.testlang.sandbox.msd" folder="" />
     </projectModules>
   </component>

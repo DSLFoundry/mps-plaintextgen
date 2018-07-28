@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4349a1cb-29cc-408f-a04d-ee612c456844(ExampleNestedList.structure)">
+<model ref="r:4349a1cb-29cc-408f-a04d-ee612c456844(com.dslfoundry.plaintextgen.example.nestedlist.structure)">
   <persistence version="9" />
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
