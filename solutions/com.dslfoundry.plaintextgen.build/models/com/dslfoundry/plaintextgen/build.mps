@@ -116,6 +116,9 @@
         <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
+      <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
+        <reference id="4278635856200794928" name="language" index="1Busuk" />
+      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
@@ -190,7 +193,7 @@
         <node concept="2pNUuL" id="2aMbqeN3MXk" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="2aMbqeN3MXx" role="2pMdts">
-            <property role="2pMdty" value="182.1" />
+            <property role="2pMdty" value="181.1" />
           </node>
         </node>
       </node>
@@ -203,7 +206,7 @@
     <node concept="2G$12M" id="2NTGYE$JTH5" role="3989C9">
       <property role="TrG5h" value="com.dslfoundry.plaintextgen" />
       <node concept="1E1JtD" id="2NTGYE$JTGY" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="com.dslfoundry.plaintextgen" />
         <property role="3LESm3" value="990507d3-3527-4c54-bfe9-0ca3c9c6247a" />
         <property role="2GAjPV" value="false" />
@@ -269,8 +272,56 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="1WlvqD8AO2R" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="com.dslfoundry.plaintextflow" />
+        <property role="3LESm3" value="cf681fc9-c798-4f89-af38-ba3c0ac342d9" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="1WlvqD8AO2U" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1WlvqD8AO4c" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1WlvqD8AO4F" role="2Ry0An">
+              <property role="2Ry0Am" value="com.dslfoundry.plaintextflow" />
+              <node concept="2Ry0Ak" id="1WlvqD8AO5a" role="2Ry0An">
+                <property role="2Ry0Am" value="com.dslfoundry.plaintextflow.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1WlvqD8AO5J" role="3bR37C">
+          <node concept="3bR9La" id="1WlvqD8AO5K" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="3bR9La" id="1WlvqD8AWAY" role="3bR37C">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+        </node>
+        <node concept="1SiIV0" id="1WlvqD8AO5L" role="3bR37C">
+          <node concept="3bR9La" id="1WlvqD8AO5M" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1WlvqD8AO5N" role="3bR37C">
+          <node concept="1Busua" id="1WlvqD8AO5O" role="1SiIV1">
+            <ref role="1Busuk" node="2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="1WlvqD8AO5P" role="1TViLv">
+          <property role="TrG5h" value="com.dslfoundry.plaintextflow#01" />
+          <property role="3LESm3" value="736153ab-0665-4767-a720-756ab69c61f0" />
+          <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="1WlvqD8AQxN" role="3bR37C">
+          <node concept="3bR9La" id="1WlvqD8AQxO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1WlvqD8AO2R" resolve="com.dslfoundry.plaintextflow" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="5rkDY7YkAIz" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="com.dslfoundry.plaintextgen.build" />
         <property role="3LESm3" value="908e5ed8-84c5-4bbe-a0a9-e0a7c2495a5a" />
         <property role="2GAjPV" value="false" />
