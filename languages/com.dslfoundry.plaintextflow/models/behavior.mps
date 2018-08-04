@@ -238,7 +238,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6$Hx0f8jWdh">
-    <ref role="13h7C2" to="ssyn:6$Hx0f8ja4S" resolve="FlowIndent" />
+    <ref role="13h7C2" to="ssyn:6$Hx0f8ja4S" resolve="Flow" />
     <node concept="13hLZK" id="6$Hx0f8jWdi" role="13h7CW">
       <node concept="3clFbS" id="6$Hx0f8jWdj" role="2VODD2" />
     </node>
@@ -253,7 +253,7 @@
           <node concept="2OqwBi" id="6$Hx0f8l$F0" role="3cqZAk">
             <node concept="13iPFW" id="6$Hx0f8l$jn" role="2Oq$k0" />
             <node concept="3TrcHB" id="6$Hx0f8l_7S" role="2OqNvi">
-              <ref role="3TsBF5" to="ssyn:6$Hx0f8jvpe" resolve="prefix" />
+              <ref role="3TsBF5" to="ssyn:6$Hx0f8jvpe" resolve="indent" />
             </node>
           </node>
         </node>
