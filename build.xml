@@ -31,7 +31,7 @@
         <id>com.dslfoundry.plaintextgen</id>
         <name>com.dslfoundry.plaintextgen</name>
         <description>Alternative Textgen for JetBrains MPS using regular reduction rules</description>
-        <version>2018.1</version>
+        <version>2018.2</version>
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
