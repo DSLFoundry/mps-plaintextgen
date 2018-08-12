@@ -2,16 +2,15 @@
 
 This plugin is an alternative text generator for MPS, using the standard model to model generation mechanisms (node macros, loop macros, property macros, etc.) to generate plain text, as opposed to MPS's programmatical textgens.
 
-This plugin enables copy/pasting an existing piece of text and parameterizing parts of this text using macros.
-
-## Quickstart
-This plugin allows you to:
+It allows you to:
 * generate directly to plain text without modeling your generation target language
 * generate to multiple text formats in the same generator run
 * create multiple textgens that obey generator priority rules
 
-The plugin has been developed for MPS 3.3.
-To install the plugin, install it from the JetBrains plugins repository:
+The plugin also enables copy/pasting an existing piece of text and parameterizing parts of this text using macros.
+
+## Quickstart
+The quickest way to install the plaintextgen plugin is to add it from the JetBrains plugins repository:
 * in MPS, select `File` -> `Settings` -> `Plugins` -> `Browse repositories...`
 * search for `plaintextgen`
 * press `Install`
