@@ -9,6 +9,8 @@ It allows you to:
 
 The plugin also enables copy/pasting an existing piece of text and parameterizing parts of this text using macros.
 
+For fine-grained control of whitespaces and indent-characters, the plaintextflow extension is available. It can be imported as a separate language (extending the plaintextgen language), so it doesn't disrupt existing plaintextgen functionality.
+
 ## Quickstart
 The quickest way to install the plaintextgen plugin is to add it from the JetBrains plugins repository:
 * in MPS, select `File` -> `Settings` -> `Plugins` -> `Browse repositories...`
