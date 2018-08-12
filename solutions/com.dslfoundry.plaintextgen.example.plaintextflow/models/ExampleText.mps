@@ -52,7 +52,7 @@
       </node>
       <node concept="356sEK" id="3HMKjsyl1L0" role="383Ya9">
         <node concept="356sEF" id="3HMKjsyl1L1" role="356sEH">
-          <property role="TrG5h" value="This part of the text is just using horizontals/verticals" />
+          <property role="TrG5h" value="This part of the text is just using plaintextgen Lines, Words, and VerticalLines" />
         </node>
         <node concept="2EixSi" id="3HMKjsyl1L2" role="2EinRH" />
       </node>
@@ -67,7 +67,7 @@
       </node>
       <node concept="356sEK" id="3HMKjsyl1Lv" role="383Ya9">
         <node concept="356sEF" id="3HMKjsyl1Lw" role="356sEH">
-          <property role="TrG5h" value="The top level container for words and line breaks is called &quot;" />
+          <property role="TrG5h" value="In plaintextflow, the container concept for &quot;FlowWord&quot;s, &quot;SoftWrap&quot;s and &quot;HardWrap&quot;s is called &quot;" />
         </node>
         <node concept="356sEF" id="3HMKjsyl1LT" role="356sEH">
           <property role="TrG5h" value="Flow" />
@@ -77,15 +77,18 @@
         </node>
         <node concept="2EixSi" id="3HMKjsyl1Lx" role="2EinRH" />
       </node>
-      <node concept="356sEK" id="3HMKjsyl1M0" role="383Ya9">
-        <node concept="356sEF" id="3HMKjsyl1M1" role="356sEH">
-          <property role="TrG5h" value="This element is a container for &quot;FlowWords&quot;." />
+      <node concept="356sEK" id="5PDzw2BmL8H" role="383Ya9">
+        <node concept="356sEF" id="5PDzw2BmL8I" role="356sEH">
+          <property role="TrG5h" value="Every &quot;Flow&quot; element can contain an indent string which will be replicated at every &quot;SoftWrap&quot;" />
         </node>
-        <node concept="2EixSi" id="3HMKjsyl1M2" role="2EinRH" />
+        <node concept="2EixSi" id="5PDzw2BmL8J" role="2EinRH" />
       </node>
       <node concept="356sEK" id="3HMKjsyl1SV" role="383Ya9">
         <node concept="356sEF" id="3HMKjsyl1SW" role="356sEH">
-          <property role="TrG5h" value="Note that you can choose indent or not, but you always use a &quot;Flow&quot; element" />
+          <property role="TrG5h" value="Note that you can choose " />
+        </node>
+        <node concept="356sEF" id="5PDzw2BmLjQ" role="356sEH">
+          <property role="TrG5h" value="to indent or not, but you always use a &quot;Flow&quot; element" />
         </node>
         <node concept="2EixSi" id="3HMKjsyl1SX" role="2EinRH" />
       </node>
@@ -100,17 +103,23 @@
       </node>
       <node concept="356sEK" id="3HMKjsyl1NE" role="383Ya9">
         <node concept="356sEF" id="3HMKjsyl1NF" role="356sEH">
-          <property role="TrG5h" value="The next paragraps will switch to using &quot;Flow&quot;s and demonstrate some features:" />
+          <property role="TrG5h" value="The following part of this text is a &quot;Flow&quot; element. As you can see it only uses FlowWords, SoftWraps, and HardWraps." />
         </node>
         <node concept="2EixSi" id="3HMKjsyl1NG" role="2EinRH" />
       </node>
       <node concept="356sEK" id="3HMKjsyl1OO" role="383Ya9">
+        <node concept="356sEF" id="5PDzw2BmLe2" role="356sEH">
+          <property role="TrG5h" value="No plaintextgen Lines, words, and VerticalLines" />
+        </node>
         <node concept="2EixSi" id="3HMKjsyl1OQ" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5PDzw2BmLbG" role="383Ya9">
+        <node concept="2EixSi" id="5PDzw2BmLbI" role="2EinRH" />
       </node>
       <node concept="356sEK" id="3HMKjsyl1Ob" role="383Ya9">
         <node concept="2xoikV" id="3HMKjsyl1OJ" role="356sEH">
           <node concept="2xotEU" id="3HMKjsyl1OM" role="2xoikU">
-            <property role="2xojqi" value="Although a &quot;Flow&quot; element integrates into plaintextgen, currently the only supported way " />
+            <property role="2xojqi" value="Although a &quot;Flow&quot; element integrates into plaintextgen, currently the only supported way to use it" />
           </node>
           <node concept="2xteQQ" id="3HMKjsyl22F" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl28k" role="2xoikU">
@@ -159,16 +168,16 @@
           </node>
           <node concept="2xteQQ" id="3HMKjsyl24X" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl25D" role="2xoikU">
-            <property role="2xojqi" value="And showing full borders between words messes mose with the rendered whitespace. " />
+            <property role="2xojqi" value="And showing full borders between words messes with the rendered whitespace" />
           </node>
           <node concept="2xteQQ" id="3HMKjsyl260" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl1Yo" role="2xoikU">
-            <property role="2xojqi" value="which we want control over." />
+            <property role="2xojqi" value="we want to control." />
           </node>
           <node concept="2xteQQ" id="3HMKjsyl3hJ" role="2xoikU" />
           <node concept="2xteQQ" id="3HMKjsyl3iD" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl3j7" role="2xoikU">
-            <property role="2xojqi" value="Other than concatenating words, it is possible to indent things using a &quot;Flow&quot;:" />
+            <property role="2xojqi" value="In addition to concatenating words, it is possible to indent text using a &quot;Flow&quot;" />
           </node>
           <node concept="2xteQQ" id="3HMKjsylUaO" role="2xoikU" />
           <node concept="2xoikV" id="3HMKjsyl3lT" role="2xoikU">
@@ -207,10 +216,10 @@
           <node concept="2xteQQ" id="3HMKjsyl3rJ" role="2xoikU" />
           <node concept="2xteQQ" id="3HMKjsyl3sw" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl3yc" role="2xoikU">
-            <property role="2xojqi" value="The &quot;indent string&quot; (editable) is displayed in yellow." />
+            <property role="2xojqi" value="The &quot;indent string&quot; (editable) is displayed in green." />
           </node>
           <node concept="2xotEU" id="3HMKjsyl3z4" role="2xoikU">
-            <property role="2xojqi" value=" It is replicated (read only)" />
+            <property role="2xojqi" value=" It is replicated in gray (read only)" />
           </node>
           <node concept="2xteQQ" id="3HMKjsyl3th" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl3_J" role="2xoikU">
@@ -219,7 +228,7 @@
           <node concept="2xteQQ" id="3HMKjsyl3u3" role="2xoikU" />
           <node concept="2xteQQ" id="3HMKjsyl3uQ" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyl3AD" role="2xoikU">
-            <property role="2xojqi" value="An indent string does not have to be whitespace, it can be any string:" />
+            <property role="2xojqi" value="An indent string does not have to be whitespace, it can be any string, e.g. a &quot;*&quot;:" />
           </node>
           <node concept="2xteQQ" id="3HMKjsyl3vE" role="2xoikU" />
           <node concept="2xoikV" id="3HMKjsyl3Cw" role="2xoikU">
@@ -258,14 +267,18 @@
           <node concept="2xteQQ" id="3HMKjsyl3wv" role="2xoikU" />
           <node concept="2xteQQ" id="3HMKjsyl3xl" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsylhRm" role="2xoikU">
-            <property role="2xojqi" value="Soft wraps always &quot;respect indentation&quot;. However there are special cases where a &quot;hard&quot;" />
+            <property role="2xojqi" value="After a soft wrap, the combined indent string of the whole indentation context is always replicated. " />
           </node>
           <node concept="2xteQQ" id="3HMKjsylhTN" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsylhV3" role="2xoikU">
-            <property role="2xojqi" value="line break is desired. For example string continuations as in some programming languages" />
+            <property role="2xojqi" value="However there are special cases where a &quot;hard&quot; line break is desired." />
           </node>
           <node concept="2xteQQ" id="3HMKjsylhMC" role="2xoikU" />
+          <node concept="2xotEU" id="5PDzw2BmLAX" role="2xoikU">
+            <property role="2xojqi" value=" For example string continuations as in some programming languages" />
+          </node>
           <node concept="2xteQQ" id="3HMKjsylhNM" role="2xoikU" />
+          <node concept="2xteQQ" id="5PDzw2BmLEt" role="2xoikU" />
           <node concept="2xoikV" id="3HMKjsylhX$" role="2xoikU">
             <node concept="2xoikV" id="3HMKjsylhYW" role="2xoikU">
               <property role="2xo79d" value="    " />
@@ -301,27 +314,43 @@
           <node concept="2xteQQ" id="3HMKjsylhOX" role="2xoikU" />
           <node concept="2xteQQ" id="3HMKjsylhQ9" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyliao" role="2xoikU">
-            <property role="2xojqi" value="The main principles of using flowtext are:" />
+            <property role="2xojqi" value="The main principles of using plaintextflow are:" />
           </node>
           <node concept="2xteQQ" id="3HMKjsyligo" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsylihU" role="2xoikU">
-            <property role="2xojqi" value="* Everything is nested using FlowIndents (you can leave the indent blank)" />
+            <property role="2xojqi" value="* Text is structured using a hierarchy of Flows" />
           </node>
           <node concept="2xteQQ" id="3HMKjsylikZ" role="2xoikU" />
-          <node concept="2xotEU" id="3HMKjsylimz" role="2xoikU">
-            <property role="2xojqi" value="* It is up to a user to insert line breaks (no &quot;block structures&quot; that do this automatically)" />
+          <node concept="2xotEU" id="5PDzw2BmLJL" role="2xoikU">
+            <property role="2xojqi" value="* Every flow has an indentation string which is empty by default" />
           </node>
-          <node concept="2xteQQ" id="3HMKjsyliAN" role="2xoikU" />
-          <node concept="2xotEU" id="3HMKjsyliM_" role="2xoikU">
-            <property role="2xojqi" value="* Line breaks are model elements, which means you can use them in macros (e.g. $IF$)" />
+          <node concept="2xteQQ" id="5PDzw2BmLHZ" role="2xoikU" />
+          <node concept="2xotEU" id="5PDzw2BmM3I" role="2xoikU">
+            <property role="2xojqi" value="* The combined indent string is constructed from the indent string of all ancestor Flows." />
           </node>
-          <node concept="2xteQQ" id="3HMKjsylj1Q" role="2xoikU" />
+          <node concept="2xteQQ" id="5PDzw2BmM7t" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyliCt" role="2xoikU">
-            <property role="2xojqi" value="* There are two types of line breaks: Hard (to column 0) and Soft (to indent border)" />
+            <property role="2xojqi" value="* There are two types of line breaks: HardWrap (jump to column 0 of next row) and " />
           </node>
           <node concept="2xteQQ" id="3HMKjsylipG" role="2xoikU" />
+          <node concept="2xotEU" id="5PDzw2BmLUz" role="2xoikU">
+            <property role="2xojqi" value="  SoftWrap (jump to column 0 of next row and insert combined indent string)" />
+          </node>
+          <node concept="2xteQQ" id="5PDzw2BmLYe" role="2xoikU" />
+          <node concept="2xotEU" id="3HMKjsylimz" role="2xoikU">
+            <property role="2xojqi" value="* It is up to the user to insert line breaks (in contrast to plaintextgen, there are" />
+          </node>
+          <node concept="2xteQQ" id="3HMKjsyliAN" role="2xoikU" />
+          <node concept="2xotEU" id="5PDzw2BmLLz" role="2xoikU">
+            <property role="2xojqi" value="  no &quot;block structures&quot; that do this automatically)" />
+          </node>
+          <node concept="2xteQQ" id="5PDzw2BmLPa" role="2xoikU" />
+          <node concept="2xotEU" id="3HMKjsyliM_" role="2xoikU">
+            <property role="2xojqi" value="* You can use HardWraps and SoftWraps in macros (e.g. $IF$), as opposed to NewLineMarkers fro plaintextgen" />
+          </node>
+          <node concept="2xteQQ" id="3HMKjsylj1Q" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsylj8L" role="2xoikU">
-            <property role="2xojqi" value="* Even when a hard wrap is used, the next soft wrap will respect the indentation context." />
+            <property role="2xojqi" value="* Even when a hard wrap is used, the next soft wrap will replicate the combined indent string." />
           </node>
           <node concept="2xteQQ" id="3HMKjsylj72" role="2xoikU" />
           <node concept="2xotEU" id="3HMKjsyliHu" role="2xoikU">
