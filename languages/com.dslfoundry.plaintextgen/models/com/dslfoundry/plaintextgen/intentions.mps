@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="k44w" ref="r:359669ec-8146-4c97-9e8a-7f7baa158ff0(com.dslfoundry.plaintextgen.plugin)" />
     <import index="myiq" ref="r:9a91b5e6-ae62-4c53-acd2-6de1a1816316(com.dslfoundry.plaintextgen.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -157,6 +158,9 @@
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -1224,6 +1228,92 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7IVTX$7Y2hv">
+    <property role="TrG5h" value="PasteUnstructuredText" />
+    <ref role="2ZfgGC" to="myiq:Z$zlZaZkvE" resolve="IText" />
+    <node concept="2S6ZIM" id="7IVTX$7Y2hw" role="2ZfVej">
+      <node concept="3clFbS" id="7IVTX$7Y2hx" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7Y2s5" role="3cqZAp">
+          <node concept="Xl_RD" id="7IVTX$7Y2s4" role="3clFbG">
+            <property role="Xl_RC" value="Paste Unstructured Text (Must Be in Buffer)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7IVTX$7Y2hy" role="2ZfgGD">
+      <node concept="3clFbS" id="7IVTX$7Y2hz" role="2VODD2">
+        <node concept="3clFbF" id="3bf11hdO8Ze" role="3cqZAp">
+          <node concept="2YIFZM" id="3bf11hdO902" role="3clFbG">
+            <ref role="1Pybhc" to="k44w:3bf11hdNzr0" resolve="PlaintextPaster" />
+            <ref role="37wK5l" to="k44w:3bf11hdO7A2" resolve="pastePlainText" />
+            <node concept="2Sf5sV" id="7IVTX$7Y3kG" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7IVTX$7YiUz">
+    <property role="TrG5h" value="EmptyTemplate" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="myiq:Z$zlZaZkv$" resolve="TextgenText" />
+    <node concept="2S6ZIM" id="7IVTX$7YiU$" role="2ZfVej">
+      <node concept="3clFbS" id="7IVTX$7YiU_" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7Yj3W" role="3cqZAp">
+          <node concept="Xl_RD" id="7IVTX$7Yj3V" role="3clFbG">
+            <property role="Xl_RC" value="Empty the Template" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7IVTX$7YiUA" role="2ZfgGD">
+      <node concept="3clFbS" id="7IVTX$7YiUB" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7ZN_k" role="3cqZAp">
+          <node concept="2OqwBi" id="7IVTX$7ZQid" role="3clFbG">
+            <node concept="2OqwBi" id="7IVTX$7ZOi8" role="2Oq$k0">
+              <node concept="2OqwBi" id="7IVTX$7ZNH8" role="2Oq$k0">
+                <node concept="2Sf5sV" id="7IVTX$7ZN_7" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7IVTX$7ZNXT" role="2OqNvi">
+                  <ref role="3Tt5mk" to="myiq:Z$zlZaZSbU" resolve="content" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="7IVTX$7ZOxa" role="2OqNvi">
+                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="7IVTX$7ZT60" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7IVTX$80ej_">
+    <property role="TrG5h" value="EmptyLines" />
+    <ref role="2ZfgGC" to="myiq:6gwxh6GbQu8" resolve="IVerticalGroup" />
+    <node concept="2S6ZIM" id="7IVTX$80ejA" role="2ZfVej">
+      <node concept="3clFbS" id="7IVTX$80ejB" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$80fgF" role="3cqZAp">
+          <node concept="Xl_RD" id="7IVTX$80fgE" role="3clFbG">
+            <property role="Xl_RC" value="Empty Lines" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7IVTX$80ejC" role="2ZfgGD">
+      <node concept="3clFbS" id="7IVTX$80ejD" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$80fEO" role="3cqZAp">
+          <node concept="2OqwBi" id="7IVTX$80i2O" role="3clFbG">
+            <node concept="2OqwBi" id="7IVTX$80fNW" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7IVTX$80fEN" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7IVTX$80fZE" role="2OqNvi">
+                <ref role="3TtcxE" to="myiq:6gwxh6GbQuo" resolve="lines" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="7IVTX$80kOd" role="2OqNvi" />
           </node>
         </node>
       </node>
