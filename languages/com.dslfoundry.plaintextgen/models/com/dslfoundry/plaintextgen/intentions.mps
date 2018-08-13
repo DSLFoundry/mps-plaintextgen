@@ -115,6 +115,7 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
+        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
@@ -138,6 +139,9 @@
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
+      <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
+        <child id="1143224127716" name="insertedNode" index="HtX7I" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -160,6 +164,9 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -1149,6 +1156,72 @@
             <node concept="TSZUe" id="7nnaVmO_0ud" role="2OqNvi">
               <node concept="37vLTw" id="7nnaVmO_0ue" role="25WWJ7">
                 <ref role="3cqZAo" node="7nnaVmO_6Tg" resolve="target" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7IVTX$7Xds9">
+    <property role="3GE5qa" value="horizontal" />
+    <property role="TrG5h" value="AddNewLineBefore" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="myiq:Z$zlZaZkvJ" resolve="Line" />
+    <node concept="2S6ZIM" id="7IVTX$7Xdsa" role="2ZfVej">
+      <node concept="3clFbS" id="7IVTX$7Xdsb" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7Xd_c" role="3cqZAp">
+          <node concept="Xl_RD" id="7IVTX$7Xd_b" role="3clFbG">
+            <property role="Xl_RC" value="Add New Line before" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7IVTX$7Xdsc" role="2ZfgGD">
+      <node concept="3clFbS" id="7IVTX$7Xdsd" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7XdHZ" role="3cqZAp">
+          <node concept="2OqwBi" id="7IVTX$7XdRd" role="3clFbG">
+            <node concept="2Sf5sV" id="7IVTX$7XdHY" role="2Oq$k0" />
+            <node concept="HtX7F" id="7IVTX$7XwL7" role="2OqNvi">
+              <node concept="2ShNRf" id="7IVTX$7XwP8" role="HtX7I">
+                <node concept="3zrR0B" id="7IVTX$7XwYi" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7IVTX$7XwYk" role="3zrR0E">
+                    <ref role="ehGHo" to="myiq:Z$zlZaZkvJ" resolve="Line" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7IVTX$7XxYU">
+    <property role="3GE5qa" value="horizontal" />
+    <property role="TrG5h" value="AddNewLineAfter" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="myiq:Z$zlZaZkvJ" resolve="Line" />
+    <node concept="2S6ZIM" id="7IVTX$7XxYV" role="2ZfVej">
+      <node concept="3clFbS" id="7IVTX$7XxYW" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7Xy87" role="3cqZAp">
+          <node concept="Xl_RD" id="7IVTX$7Xy86" role="3clFbG">
+            <property role="Xl_RC" value="Add New Line after" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7IVTX$7XxYX" role="2ZfgGD">
+      <node concept="3clFbS" id="7IVTX$7XxYY" role="2VODD2">
+        <node concept="3clFbF" id="7IVTX$7Xyyg" role="3cqZAp">
+          <node concept="2OqwBi" id="7IVTX$7XyFu" role="3clFbG">
+            <node concept="2Sf5sV" id="7IVTX$7Xyyf" role="2Oq$k0" />
+            <node concept="HtI8k" id="7IVTX$7Xz2N" role="2OqNvi">
+              <node concept="2ShNRf" id="7IVTX$7Xz3C" role="HtI8F">
+                <node concept="3zrR0B" id="7IVTX$7XzcM" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7IVTX$7XzcO" role="3zrR0E">
+                    <ref role="ehGHo" to="myiq:Z$zlZaZkvJ" resolve="Line" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
