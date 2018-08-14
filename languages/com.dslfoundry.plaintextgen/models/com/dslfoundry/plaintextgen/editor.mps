@@ -21,6 +21,7 @@
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
+      <concept id="1226339813308" name="jetbrains.mps.lang.editor.structure.PaddingBottomStyleClassItem" flags="ln" index="27z8qx" />
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
@@ -352,6 +353,9 @@
       <ref role="34QXea" node="2jBmyzyHOOA" resolve="TextGenElement_Keymap" />
       <node concept="VPXOz" id="4w$6EQbaGUe" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+      <node concept="27z8qx" id="1$OPH5VE70I" role="3F10Kt">
+        <property role="3$6WeP" value="0.2" />
       </node>
     </node>
   </node>
