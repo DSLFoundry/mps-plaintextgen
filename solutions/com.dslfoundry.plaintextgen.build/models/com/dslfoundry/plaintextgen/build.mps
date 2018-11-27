@@ -164,7 +164,7 @@
       </node>
       <node concept="3_J27D" id="2NTGYE$JTH9" role="m$_w8">
         <node concept="3Mxwew" id="2NTGYE$JTHa" role="3MwsjC">
-          <property role="3MwjfP" value="2018.2" />
+          <property role="3MwjfP" value="2018.3" />
         </node>
       </node>
       <node concept="m$f5U" id="2NTGYE$JTHb" role="m$_yh">
@@ -190,13 +190,13 @@
         <node concept="2pNUuL" id="2aMbqeN3MX5" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="2aMbqeN3MXg" role="2pMdts">
-            <property role="2pMdty" value="183.1" />
+            <property role="2pMdty" value="191.*" />
           </node>
         </node>
         <node concept="2pNUuL" id="2aMbqeN3MXk" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="2aMbqeN3MXx" role="2pMdts">
-            <property role="2pMdty" value="181.1" />
+            <property role="2pMdty" value="183.1" />
           </node>
         </node>
       </node>
