@@ -25,26 +25,28 @@
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}/com.dslfoundry.plaintextgen" />
-    <mkdir dir="${build.layout}/com.dslfoundry.plaintextgen/META-INF" />
-    <echoxml file="${build.layout}/com.dslfoundry.plaintextgen/META-INF/plugin.xml">
+    <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.tmp}/default/plaintextgen.zip" />
+    <mkdir dir="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen" />
+    <mkdir dir="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/META-INF" />
+    <echoxml file="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>com.dslfoundry.plaintextgen</id>
         <name>com.dslfoundry.plaintextgen</name>
         <description>Alternative Textgen for JetBrains MPS using regular reduction rules</description>
-        <version>2018.2</version>
+        <version>2018.3</version>
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
-        <idea-version until-build="183.1" since-build="181.1" />
+        <idea-version until-build="191.1" since-build="183.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.layout}/com.dslfoundry.plaintextgen/languages" />
-    <mkdir dir="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen" />
+    <mkdir dir="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages" />
+    <mkdir dir="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.jar" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.plaintextgen.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.dslfoundry.plaintextgen.jar/META-INF/module.xml">
@@ -58,6 +60,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
@@ -72,7 +75,7 @@
         <sources jar="com.dslfoundry.plaintextgen-src.jar" descriptor="com.dslfoundry.plaintextgen.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextgen" />
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextgen" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextgen/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -89,6 +92,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -100,7 +104,7 @@
         <sources jar="com.dslfoundry.plaintextgen-src.jar" descriptor="com.dslfoundry.plaintextgen.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextgen#5198309202559528987" />
       <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextgen-generator.jar" />
     </jar>
@@ -110,7 +114,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.dslfoundry.plaintextgen-models">
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextgen/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextgen/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -139,6 +143,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -150,7 +155,7 @@
         <sources jar="com.dslfoundry.plaintextflow-src.jar" descriptor="com.dslfoundry.plaintextflow.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextflow.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextflow.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextflow" />
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextflow/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextflow.jar" />
@@ -166,6 +171,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -177,7 +183,7 @@
         <sources jar="com.dslfoundry.plaintextflow-src.jar" descriptor="com.dslfoundry.plaintextflow.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextflow-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextflow-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextflow#01" />
       <fileset dir="${build.tmp}/default/com.dslfoundry.plaintextflow-generator.jar" />
     </jar>
@@ -187,7 +193,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.dslfoundry.plaintextflow-models">
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextflow/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextflow-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextflow-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/com.dslfoundry.plaintextflow/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -215,7 +221,7 @@
         <sources jar="com.dslfoundry.plaintextgen.build-src.jar" descriptor="com.dslfoundry.plaintextgen.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.build.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.dslfoundry.plaintextgen.build" />
       <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
@@ -224,7 +230,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.plaintextgen.build-models">
       <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/plaintextgen.zip/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.build-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -234,12 +240,18 @@
       <zipfileset file="${basedir}/solutions/com.dslfoundry.plaintextgen.build/com.dslfoundry.plaintextgen.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.plaintextgen.build-models" prefix="module/models" />
     </jar>
+    <zip destfile="${build.layout}/plaintextgen.zip">
+      <fileset dir="${build.tmp}/default/plaintextgen.zip" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <unzip src="${artifacts.mps}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+  </target>
   
   <target name="build" depends="assemble" />
   
@@ -263,6 +275,8 @@
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -271,6 +285,7 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
@@ -314,14 +329,13 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.util.order.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
@@ -334,9 +348,7 @@
       <library file="${artifacts.mps}/lib/mps-environment.jar" />
       <library file="${artifacts.mps}/lib/mps-openapi.jar" />
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
-      <library file="${artifacts.mps}/lib/mps-stubs.jar" />
-      <library file="${artifacts.mps}/lib/mps-test.jar" />
-      <library file="${artifacts.mps}/lib/mps-tool.jar" />
+      <library file="${artifacts.mps}/lib/mps-references.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
@@ -381,6 +393,7 @@
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -432,6 +445,7 @@
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -472,6 +486,7 @@
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -513,6 +528,7 @@
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
   </languages>
@@ -41,6 +41,10 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
+      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
+        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
+      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
@@ -95,10 +99,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -148,8 +154,16 @@
       </node>
     </node>
     <node concept="1l3spV" id="2NTGYE$JTHf" role="1l3spN">
-      <node concept="m$_wl" id="2NTGYE$JTHj" role="39821P">
-        <ref role="m_rDy" node="2NTGYE$JTH6" resolve="com.dslfoundry.plaintextgen" />
+      <node concept="3981dG" id="7qPb2RshJlV" role="39821P">
+        <node concept="3_J27D" id="7qPb2RshJlX" role="Nbhlr">
+          <node concept="3Mxwew" id="7qPb2Rsicmx" role="3MwsjC">
+            <property role="3MwjfP" value="plaintextgen.zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="2NTGYE$JTHj" role="39821P">
+          <ref role="m_rDy" node="2NTGYE$JTH6" resolve="com.dslfoundry.plaintextgen" />
+          <node concept="pUk6x" id="1jpfXD$n5lw" role="pUk7w" />
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="2NTGYE$JTH6" role="3989C9">
@@ -161,7 +175,7 @@
       </node>
       <node concept="3_J27D" id="2NTGYE$JTH9" role="m$_w8">
         <node concept="3Mxwew" id="2NTGYE$JTHa" role="3MwsjC">
-          <property role="3MwjfP" value="2018.2" />
+          <property role="3MwjfP" value="2018.3" />
         </node>
       </node>
       <node concept="m$f5U" id="2NTGYE$JTHb" role="m$_yh">
@@ -187,13 +201,13 @@
         <node concept="2pNUuL" id="2aMbqeN3MX5" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="2aMbqeN3MXg" role="2pMdts">
-            <property role="2pMdty" value="183.1" />
+            <property role="2pMdty" value="191.1" />
           </node>
         </node>
         <node concept="2pNUuL" id="2aMbqeN3MXk" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="2aMbqeN3MXx" role="2pMdts">
-            <property role="2pMdty" value="181.1" />
+            <property role="2pMdty" value="183.1" />
           </node>
         </node>
       </node>
