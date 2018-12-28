@@ -599,7 +599,7 @@
     <property role="3GE5qa" value="horizontal" />
     <ref role="1XX52x" to="myiq:4q7d2VGNiCW" resolve="NewlineMarker" />
     <node concept="3F0ifn" id="4q7d2VGNzUn" role="2wV5jI">
-      <property role="3F0ifm" value="↵" />
+      <property role="3F0ifm" value="¶" />
       <node concept="VechU" id="4q7d2VGNzUt" role="3F10Kt">
         <property role="Vb096" value="lightGray" />
       </node>
