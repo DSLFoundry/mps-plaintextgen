@@ -3,9 +3,12 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.dslfoundry.plaintextgen" />
   <property name="build.layout" location="${build.dir}/artifacts/com.dslfoundry.plaintextgen" />
-  <property name="mps_home" location="" />
-  <property name="artifacts.mps" location="${mps_home}" />
+  <property name="mps.home" location="" />
+  <property name="mps.extensions" location="${mps.home}/plugins" />
+  <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.de.itemis.mps.extensions" location="${mps.extensions}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
+  <property file="${artifacts.de.itemis.mps.extensions}/build.properties" prefix="import.de.itemis.mps.extensions" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
@@ -13,6 +16,7 @@
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
   <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
   <property name="mpsBootstrapCore.version" value="${import.mps.mpsBootstrapCore.version}" />
+  <property name="de.itemis.mps.extensions.versionNumber" value="${import.de.itemis.mps.extensions.de.itemis.mps.extensions.versionNumber}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -38,6 +42,7 @@
         <vendor url="http://dslfoundry.com/">DSLFoundry</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
+        <depends>de.itemis.mps.selection</depends>
         <idea-version until-build="191.1" since-build="183.1" />
         
         <extensions defaultExtensionNs="com.intellij">
@@ -59,6 +64,7 @@
           <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
@@ -243,7 +249,7 @@
     <zip destfile="${build.layout}/plaintextgen.zip">
       <fileset dir="${build.tmp}/default/plaintextgen.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -273,10 +279,15 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
+      <plugin path="${artifacts.de.itemis.mps.extensions}/de-itemis-mps-selection" />
+      <plugin path="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar/META-INF/plugin.xml/../.." />
+      <library file="${artifacts.de.itemis.mps.extensions}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.intentions.jar" />
+      <library file="${artifacts.de.itemis.mps.extensions}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
+      <library file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -365,7 +376,8 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="mps_home" path="${mps_home}" />
+      <macro name="mps.home" path="${mps.home}" />
+      <macro name="mps.extensions" path="${mps.extensions}" />
     </generate>
   </target>
   
@@ -409,6 +421,7 @@
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -561,6 +574,7 @@
         <path location="${basedir}/solutions/com.dslfoundry.plaintextgen.build/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       </classpath>
     </javac>

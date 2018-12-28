@@ -1,15 +1,15 @@
 language: java
 jdk:
 - oraclejdk8
-before_install: wget https://download-cf.jetbrains.com/mps/2018.2/MPS-2018.2.zip
-install: unzip MPS-2018.2.zip
-script: ant -Dmps_home=./MPS\ 2018.2 clean generate assemble
-before_deploy: cd build/artifacts/com.dslfoundry.plaintextgen; zip -r com.dslfoundry.plaintextgen-MPS-2018.2.zip com.dslfoundry.plaintextgen; cd -
+before_install: wget https://download-cf.jetbrains.com/mps/2018.3/MPS-2018.3.zip; wget https://github.com/JetBrains/MPS-extensions/releases/download/nightly-2018.3.447.2858489/de.itemis.mps.extensions-2018.3.447.2858489.zip
+install: unzip MPS-2018.3.zip; unzip -o de.itemis.mps.extensions-2018.3.447.2858489.zip
+script: ant -Dmps.home=./MPS\ 2018.3 -Dmps.extensions=./de.itemis.mps.extensions clean generate assemble
+before_deploy: cd build/artifacts/com.dslfoundry.plaintextgen; zip -r com.dslfoundry.plaintextgen-MPS-2018.3.zip com.dslfoundry.plaintextgen; cd -
 deploy:
   provider: releases
   api_key:
     secure: rKm0sEmLJNgG7gRmCiLIH4poLt8ozTuwL5j+a6ZTPWprONDqwlEMD8iWa+6XBmIzWd5196uq+qi1RqvI8OGkux4oyOMrcZw5HQvbMOulCMmr7rybMeQ0CuHxj90gaPxrmeudh/cgA2tBTxmnQOPuE1SaBO3q3odDWg7Xt0Y+9OKakez0pZg70W89pXyHc111ufoCYpC0Q3mibVbICy+mO2r8EASFUaOmk/JaitCQI/EW/oSV5k7A/ZhTMtu7jaqdmeo+fbsOBmIN2riL1Ijn65QdZVuJxIHPLAXwf7WR5a98g6IWAZtuP8u4OTNWts6Zi0UMkYJ+n9k777Vbw+yW1GQJRor4DuExwW4az8Fh+nSv/bHCdHVFKIM3T98gtDlhHrG8Vnj4wLsg8KS5Y0YglzFJrHmVEDdARKDGvaU54QUNplWNMqvrabGFVAK+7Mp6yb09LwyDa9sto6PrP3gN75i6CjJ6rW6NHDjJ6+ISNMKcfjtBQYOawoBpY2x5h19aIqg1MrfUUdEC01k9+aYDqmYIAZmGLpt+/7t7lxNcYuD6PPxpB3geLAemi4xw8nEcWfDzJGRUduH58GT1vwsCK2bM3vBBKF+iWOhAT/LlYAf2APwuEu9HhHeBCRWFRLFJ4iyDes0npnb4SSV44gFpItRks96rFXadTfjLCJedAII=
-  file: "build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-MPS-2018.2.zip"
+  file: "build/artifacts/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen-MPS-2018.3.zip"
   skip_cleanup: true
   on:
     repo: DSLFoundry/mps-plaintextgen
