@@ -67,6 +67,7 @@
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
+      <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
@@ -295,6 +296,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="VLuvy" id="9C_B26LSwA" role="3F10Kt">
+          <property role="Vb096" value="orange" />
         </node>
         <node concept="15ARfc" id="1zqmxeUJU3b" role="3F10Kt">
           <property role="3$6WeP" value="0" />
