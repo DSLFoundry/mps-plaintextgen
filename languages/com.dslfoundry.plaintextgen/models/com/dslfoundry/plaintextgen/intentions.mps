@@ -1277,30 +1277,6 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="7IVTX$7Y2hv">
-    <property role="TrG5h" value="PasteUnstructuredText" />
-    <ref role="2ZfgGC" to="myiq:Z$zlZaZkvE" resolve="IText" />
-    <node concept="2S6ZIM" id="7IVTX$7Y2hw" role="2ZfVej">
-      <node concept="3clFbS" id="7IVTX$7Y2hx" role="2VODD2">
-        <node concept="3clFbF" id="7IVTX$7Y2s5" role="3cqZAp">
-          <node concept="Xl_RD" id="7IVTX$7Y2s4" role="3clFbG">
-            <property role="Xl_RC" value="Paste Unstructured Text (Must Be in Buffer)" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="7IVTX$7Y2hy" role="2ZfgGD">
-      <node concept="3clFbS" id="7IVTX$7Y2hz" role="2VODD2">
-        <node concept="3clFbF" id="3bf11hdO8Ze" role="3cqZAp">
-          <node concept="2YIFZM" id="3bf11hdO902" role="3clFbG">
-            <ref role="1Pybhc" to="k44w:3bf11hdNzr0" resolve="PlaintextPaster" />
-            <ref role="37wK5l" to="k44w:3bf11hdO7A2" resolve="pastePlainText" />
-            <node concept="2Sf5sV" id="7IVTX$7Y3kG" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="7IVTX$7YiUz">
     <property role="TrG5h" value="EmptyTemplate" />
     <property role="2ZfUl0" value="true" />

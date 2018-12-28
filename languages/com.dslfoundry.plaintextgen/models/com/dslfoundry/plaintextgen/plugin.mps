@@ -13,6 +13,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="myiq" ref="r:9a91b5e6-ae62-4c53-acd2-6de1a1816316(com.dslfoundry.plaintextgen.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -313,7 +314,7 @@
   </registry>
   <node concept="sE7Ow" id="3bf11hdMVNk">
     <property role="TrG5h" value="PasteUnstructuredText" />
-    <property role="2uzpH1" value="Paste Unstructured Text" />
+    <property role="2uzpH1" value="Paste Unstructured Text (Must Be in Buffer)" />
     <node concept="2S4$dB" id="3bf11hdN8ST" role="1NuT2Z">
       <property role="TrG5h" value="node" />
       <node concept="3Tm6S6" id="3bf11hdN8SU" role="1B3o_S" />
@@ -348,6 +349,9 @@
     </node>
     <node concept="tT9cl" id="3bf11hdMXTl" role="2f5YQi">
       <ref role="tU$_T" to="tprs:1JdTZ5pVxeC" resolve="EditorPopupEx" />
+    </node>
+    <node concept="tT9cl" id="9C_B26IwGf" role="2f5YQi">
+      <ref role="tU$_T" to="ekwn:5YEoTZrFokU" resolve="ActionsAsIntentions" />
     </node>
   </node>
   <node concept="2DaZZR" id="3bf11hdMXT7" />
