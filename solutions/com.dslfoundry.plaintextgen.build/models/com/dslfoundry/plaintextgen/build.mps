@@ -239,7 +239,6 @@
     <node concept="2G$12M" id="2NTGYE$JTH5" role="3989C9">
       <property role="TrG5h" value="com.dslfoundry.plaintextgen" />
       <node concept="1E1JtD" id="2NTGYE$JTGY" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.dslfoundry.plaintextgen" />
         <property role="3LESm3" value="990507d3-3527-4c54-bfe9-0ca3c9c6247a" />
         <node concept="55IIr" id="2NTGYE$JTGT" role="3LF7KH">
@@ -295,6 +294,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="9C_B26L$HM" role="3bR37C">
+          <node concept="3bR9La" id="9C_B26L$HN" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
           </node>
         </node>
       </node>
