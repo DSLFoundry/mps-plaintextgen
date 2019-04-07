@@ -1,4 +1,4 @@
-# This repository is deprecated
+# This repository is archived
 The plugin mps-plaintextgen has been moved from this repository to https://github.com/JetBrains/MPS-extensions. From now on, it will be maintained there. Please submit feedback and issues there.
 
 # JetBrains MPS Text Generator Plugin
