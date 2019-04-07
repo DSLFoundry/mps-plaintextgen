@@ -1,3 +1,6 @@
+# This repository is deprecated
+The plugin mps-plaintextgen has been moved from this repository to https://github.com/JetBrains/MPS-extensions. From now on, it will be maintained there. Please submit feedback and issues there.
+
 # JetBrains MPS Text Generator Plugin
 
 This plugin is an alternative text generator for MPS, using the standard model to model generation mechanisms (node macros, loop macros, property macros, etc.) to generate plain text, as opposed to MPS's programmatical textgens.
